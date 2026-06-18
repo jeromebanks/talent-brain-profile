@@ -21,8 +21,6 @@ Or just ask questions directly — Claude will navigate the profile and answer:
 
 No setup required. The plugin loads automatically.
 
-> **Want a richer version of this README?** Run `/talent-brain:publish` to generate a narrative introduction built from the full profile.
-
 ---
 
 ## For Jerome
