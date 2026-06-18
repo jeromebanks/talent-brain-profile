@@ -53,7 +53,8 @@ Built Datacore, Quantcast's production job scheduling and monitoring framework, 
 _Used at:_ [Quantcast](../experience/quantcast.md)
 
 **C++** — familiar — historical  
-Used in earlier engineering roles.
+Used in earlier engineering roles.  
+_Used at:_ [prior-experience](../experience/prior-experience.md)
 
 **Bash / Zsh** — proficient — active  
 Shell scripting for automation, tooling, and DevOps tasks throughout career.
@@ -77,6 +78,11 @@ Used for silver/gold aggregate tables; diagnosed and resolved write contention i
 _Used at:_ [Apixio](../experience/apixio.md), [Tatari](../experience/tatari.md)  
 _Reference:_ [delta.io](https://delta.io)
 
+**Databricks** — proficient — recent  
+Core compute platform for Tatari's Spark-based data processing after migrating off Postgres/Redshift; used for deploying Spark jobs and the Flexible Aggregator.  
+_Used at:_ [Tatari](../experience/tatari.md)  
+_Reference:_ [databricks.com](https://databricks.com)
+
 **Apache Hive** — expert — historical  
 Deep expertise in Hive UDF/UDAF development (Brickhouse), HiveQL query optimization, and MetaStore management. Wrote REST service exposing MetaStore at StitchFix.  
 _Used at:_ [Klout](../experience/klout.md), [Quantcast](../experience/quantcast.md), [if(we)](../experience/ifwe.md), [StitchFix](../experience/stitchfix.md), [Jumpshot](../experience/jumpshot.md)  
@@ -92,6 +98,15 @@ Batch writes using HBase UDFs from Brickhouse; built demographic aggregation pip
 _Used at:_ [if(we)](../experience/ifwe.md), [Klout](../experience/klout.md)  
 _Reference:_ [hbase.apache.org](https://hbase.apache.org)
 
+**Apache Livy** — familiar — recent  
+Extended a fork of Apache Livy for bug fixes and new features to support Spark-on-Kubernetes deployment at Tatari.  
+_Used at:_ [Tatari](../experience/tatari.md)  
+_Reference:_ [livy.apache.org](https://livy.apache.org)
+
+**KMV Sketches (Cardinality Estimation)** — proficient — recent  
+Implemented KMV sketch-based cardinality estimation and set similarity in Brickhouse, Cubism (Jumpshot), and Zippo (Tatari). Recurring technique for scalable reach/unique-count estimation at high cardinality without exact counts.  
+_Used at:_ [Klout](../experience/klout.md), [if(we)](../experience/ifwe.md), [Jumpshot](../experience/jumpshot.md), [Tatari](../experience/tatari.md)
+
 ---
 
 ## Streaming & Messaging
@@ -106,6 +121,16 @@ Built multiple GCP Dataflow pipelines using Beam with Scio at Demandbase (docume
 _Used at:_ [Demandbase](../experience/demandbase.md), [Onyx GSK](../experience/onyx-gsk.md)  
 _Reference:_ [beam.apache.org](https://beam.apache.org) · [Scio on GitHub](https://github.com/spotify/scio)
 
+**Apache Avro** — proficient — historical  
+Serialization format for event data ingested from Kafka into HDFS via Camus at if(we)'s Ramblas event ingestion system.  
+_Used at:_ [if(we)](../experience/ifwe.md)  
+_Reference:_ [avro.apache.org](https://avro.apache.org)
+
+**Apache Camus** — familiar — historical  
+Used at if(we) for reliable bulk ingestion of Kafka topic data into HDFS, as part of the Ramblas event ingestion system.  
+_Used at:_ [if(we)](../experience/ifwe.md)  
+_Reference:_ [github.com/linkedin/camus](https://github.com/linkedin/camus)
+
 **Apache Pulsar** — familiar — historical  
 Implemented a Pulsar-to-GCP-Pubsub bridge at Demandbase for the Bumblebee streaming framework.  
 _Used at:_ [Demandbase](../experience/demandbase.md)  
@@ -115,6 +140,10 @@ _Reference:_ [pulsar.apache.org](https://pulsar.apache.org)
 Used as intermediate persistence layer for event ingestion pipeline at StitchFix; built Akka Reactive Streams connector.  
 _Used at:_ [StitchFix](../experience/stitchfix.md)  
 _Reference:_ [AWS Kinesis](https://aws.amazon.com/kinesis/)
+
+**AMQP** — familiar — historical  
+Used as an event source endpoint in the Otherworld event ingestion framework at StitchFix, alongside HTTP REST.  
+_Used at:_ [StitchFix](../experience/stitchfix.md)
 
 ---
 
@@ -135,10 +164,35 @@ Production pipelines for large-scale ingestion (150TB+), streaming sync, documen
 _Used at:_ [Demandbase](../experience/demandbase.md), [Onyx GSK](../experience/onyx-gsk.md)  
 _Reference:_ [cloud.google.com/dataflow](https://cloud.google.com/dataflow)
 
+**GCP Dataproc** — proficient — active  
+Managed Spark clusters on Dataproc for JDBC ingestion jobs at Onyx GSK.  
+_Used at:_ [Onyx GSK](../experience/onyx-gsk.md)  
+_Reference:_ [cloud.google.com/dataproc](https://cloud.google.com/dataproc)
+
+**GCP Pub/Sub** — proficient — recent  
+Used as the target for the Pulsar-to-Pubsub bridge in Demandbase's Bumblebee streaming framework.  
+_Used at:_ [Demandbase](../experience/demandbase.md)  
+_Reference:_ [cloud.google.com/pubsub](https://cloud.google.com/pubsub)
+
 **Amazon Web Services (AWS)** — proficient — historical  
 Used EMR, S3, Kinesis, DynamoDB, Lambda, CloudWatch, EKS in production at StitchFix and Tatari.  
 _Used at:_ [StitchFix](../experience/stitchfix.md), [Tatari](../experience/tatari.md)  
 _Reference:_ [aws.amazon.com](https://aws.amazon.com)
+
+**AWS S3** — proficient — historical  
+Primary storage layer for event ingestion pipelines at StitchFix; also used at Tatari for data lake storage.  
+_Used at:_ [StitchFix](../experience/stitchfix.md), [Tatari](../experience/tatari.md)  
+_Reference:_ [AWS S3](https://aws.amazon.com/s3/)
+
+**AWS Lambda** — familiar — historical  
+Used as a runtime for evaluating Brule's Rules DSL-defined rules at StitchFix.  
+_Used at:_ [StitchFix](../experience/stitchfix.md)  
+_Reference:_ [AWS Lambda](https://aws.amazon.com/lambda/)
+
+**AWS CloudWatch** — familiar — historical  
+Built Akka Reactive Streams connector for CloudWatch metrics at StitchFix; used for production monitoring.  
+_Used at:_ [StitchFix](../experience/stitchfix.md)  
+_Reference:_ [AWS CloudWatch](https://aws.amazon.com/cloudwatch/)
 
 ---
 
@@ -148,13 +202,18 @@ _Reference:_ [aws.amazon.com](https://aws.amazon.com)
 JDBC ingestion from all four at Onyx GSK; Postgres/Redshift migration at Tatari.  
 _Used at:_ [Tatari](../experience/tatari.md), [Onyx GSK](../experience/onyx-gsk.md)
 
+**AWS Redshift** — familiar — historical  
+Migrated Tatari's data warehouse off Redshift onto Spark/Databricks.  
+_Used at:_ [Tatari](../experience/tatari.md)  
+_Reference:_ [AWS Redshift](https://aws.amazon.com/redshift/)
+
 **AWS DynamoDB** — familiar — historical  
 Built Spark DataSource connector and Akka Reactive Streams connector at StitchFix.  
 _Used at:_ [StitchFix](../experience/stitchfix.md)  
 _Reference:_ [AWS DynamoDB](https://aws.amazon.com/dynamodb/)
 
 **Cassandra / MongoDB** — familiar — historical  
-Listed in skills; not featured in specific project descriptions.
+Used in supporting roles; not featured in specific project descriptions.
 
 ---
 
@@ -180,16 +239,24 @@ _Reference:_ [nutch.apache.org](https://nutch.apache.org)
 ## ML/AI Platform
 
 **Vertex AI** — familiar — active  
-Listed in current skills; not yet featured in specific project descriptions.  
+Used for ML workloads at Onyx GSK (GCP's primary ML platform).  
+_Used at:_ [Onyx GSK](../experience/onyx-gsk.md)  
 _Reference:_ [cloud.google.com/vertex-ai](https://cloud.google.com/vertex-ai)
 
 **Kubeflow** — familiar — active  
-Listed in current skills; not yet featured in specific project descriptions.  
+ML pipeline orchestration; used alongside Vertex AI for workflow management at Onyx GSK.  
+_Used at:_ [Onyx GSK](../experience/onyx-gsk.md)  
 _Reference:_ [kubeflow.org](https://www.kubeflow.org)
 
-**MLflow** — familiar — active  
-Listed in current skills; not yet featured in specific project descriptions.  
+**MLflow** — familiar — recent  
+Experiment tracking and model registry; used in data platform work at Apixio.  
+_Used at:_ [Apixio](../experience/apixio.md)  
 _Reference:_ [mlflow.org](https://mlflow.org)
+
+**Stanford NLP (CoreNLP)** — familiar — historical  
+Used for Named Entity Recognition and keyword extraction in the Windmill Document Parser Dataflow pipeline at Demandbase.  
+_Used at:_ [Demandbase](../experience/demandbase.md)  
+_Reference:_ [stanfordnlp.github.io/CoreNLP](https://stanfordnlp.github.io/CoreNLP/)
 
 ---
 
@@ -206,13 +273,18 @@ _Used at:_ [Tatari](../experience/tatari.md)
 _Reference:_ [docker.com](https://www.docker.com)
 
 **Terraform** — familiar — active  
-Listed in current skills; infrastructure-as-code for cloud environments.  
+Infrastructure-as-code for cloud environments; used in DPE framework workflows at Onyx GSK.  
+_Used at:_ [Onyx GSK](../experience/onyx-gsk.md)  
 _Reference:_ [terraform.io](https://www.terraform.io)
 
 **Prometheus / Grafana** — proficient — recent  
 Built observability dashboards for production Spark pipelines at Apixio; integrated monitoring with alerts at Demandbase.  
 _Used at:_ [Demandbase](../experience/demandbase.md), [Apixio](../experience/apixio.md)  
 _Reference:_ [prometheus.io](https://prometheus.io) · [grafana.com](https://grafana.com)
+
+**Git pre-commit hooks** — proficient — active  
+Built WFLinter as a git pre-commit hook for validating GCP Workflow YAML files before CI/CD submission at Onyx GSK.  
+_Used at:_ [Onyx GSK](../experience/onyx-gsk.md)
 
 ---
 
@@ -222,6 +294,16 @@ _Reference:_ [prometheus.io](https://prometheus.io) · [grafana.com](https://gra
 Used Akka for dependency-engine in Satisfaction scheduler, reactive event ingestion at StitchFix, and initial Klout Score scheduling prototype.  
 _Used at:_ [Klout](../experience/klout.md), [if(we)](../experience/ifwe.md), [StitchFix](../experience/stitchfix.md)  
 _Reference:_ [akka.io](https://akka.io)
+
+**Play! Framework** — proficient — historical  
+Satisfaction scheduler UI built with Play! at Klout and if(we); web framework of choice for Scala-based internal tooling.  
+_Used at:_ [Klout](../experience/klout.md), [if(we)](../experience/ifwe.md)  
+_Reference:_ [playframework.com](https://www.playframework.com)
+
+**Finagle / Finch** — familiar — historical  
+Used Twitter's Finagle and Finch to build Ginsberg, a REST microservice exposing the Hive MetaStore, at StitchFix.  
+_Used at:_ [StitchFix](../experience/stitchfix.md)  
+_Reference:_ [twitter.github.io/finagle](https://twitter.github.io/finagle/)
 
 ---
 
@@ -244,7 +326,7 @@ _Reference:_ [hivemall.incubator.apache.org](https://hivemall.incubator.apache.o
 ## Leadership & Collaboration
 
 **Mentoring engineers** — proficient — active  
-Explicit mentoring of junior and mid-level engineers at Klout, Jumpshot, and Onyx GSK. Introduced common programming models and development practices at Klout; educated junior engineers on Big Data techniques at Jumpshot.  
+Explicit mentoring of junior and mid-level engineers at Klout, Jumpshot, and Onyx GSK. Introduced common programming model for data development at Klout; educated junior engineers on Big Data techniques at Jumpshot.  
 _Used at:_ [Klout](../experience/klout.md), [Jumpshot](../experience/jumpshot.md), [Onyx GSK](../experience/onyx-gsk.md)
 
 **Technical evangelism & community building** — expert — recent  
