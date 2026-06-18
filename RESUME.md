@@ -68,9 +68,53 @@ Technical leadership in Hadoop and Hive for social influence scoring. Built the 
 Hadoop/MapReduce pipelines for web analytics and advertising. Publisher daily measurement job, job scheduling framework in Ruby, cluster job performance optimization.
 → [Deep dive](experience/quantcast.md)
 
-### Prior Experience (pre-2008)
-Enterprise software startups (BEA, Plumtree, diCarta), early internet companies (Infoseek, Go.com), and independent contracting at Wall Street trading firms (Citibank, Lehman, NatWest).
-→ [Overview](experience/prior-experience.md)
+### Pulse Entertainment / Veepers.com — Lead Java Developer (2007–2008)
+Mobile multimedia avatar startup; designed scalable image delivery web services for BREW clients using Spring and Jackrabbit JCR, while stabilizing a legacy C++ avatar rendering system.
+→ [Deep dive](experience/pulse-veepers.md)
+
+### BEA BID Division / Plumtree Software — Sr. Software Engineer (2004–2007)
+Enterprise portal and SOA infrastructure; designed Spring/JMS-based remoting framework, contributed to JSR-168 portlet container, and developed CMS extensions.
+→ [Deep dive](experience/bea-plumtree.md)
+
+### Lawson Software — Technical Lead (2004)
+Short engagement; analyzed and improved performance of a Budgeting and Planning application, identifying JVM thread contention and database bottlenecks.
+→ [Deep dive](experience/lawson.md)
+
+### Cyanea Systems — Sr. Software Engineer (2002–2004)
+Enterprise J2EE application management startup; built monitoring infrastructure using bytecode modification (BCEL/AspectJ) for non-invasive profiling and application trapping.
+→ [Deep dive](experience/cyanea.md)
+
+### diCarta — Sr. Staff Engineer (2000–2002)
+Contract management/CRM vendor; architected an XML-based EAI integration framework (XMLAPI) supporting HTTP, JMS, EJB, and SMTP, plus SSO and digital signature capabilities.
+→ [Deep dive](experience/dicarta.md)
+
+### Infoseek / Go.com / Disney Internet Group — Staff Engineer (1999–2000)
+E-commerce infrastructure for a major media portal; built transaction messaging, credit card authorization, and a reusable component design pattern adopted across the engineering org.
+→ [Deep dive](experience/infoseek-go.md)
+
+### Bay One Technologies — Senior Software Engineer (1997–1999)
+Online stock trading infrastructure; implemented a CORBA-based broker distribution server and a novel unit testing framework for server-side Java applications.
+→ [Deep dive](experience/bay-one.md)
+
+### Axiologic Corporation (contractor) — NatWest / Deutsche-Morgan Grenfell / Citibank (1995–1997)
+Independent contractor at three Wall Street firms; built real-time trading analytics in C++, quantitative finance libraries, and data conversion systems for derivative trading platforms.
+→ [Deep dive](experience/axiologic.md)
+
+### Lehman Brothers — Senior Programmer Analyst (1993–1995)
+Designed and built a real-time distributed risk management system for equity traders, calculating option pricing models across processes and machines.
+→ [Deep dive](experience/lehman.md)
+
+### OFI Corp. — Software Engineer (1993)
+Implemented C++ container and iterator libraries and Oracle database performance improvements for an in-house consulting firm.
+→ [Deep dive](experience/ofi.md)
+
+### Timber Hill — Programmer/Analyst (1991–1993)
+Back-office systems for options trading; designed an OO security modeling framework in C++ and created a domain-specific language for describing financial instruments (with Lex/Yacc interpreter).
+→ [Deep dive](experience/timber-hill.md)
+
+### AT&T — Consultant (1989–1991)
+Early career engagement implementing Informix-based hardware tracking and business applications.
+→ [Deep dive](experience/att.md)
 
 ## Selected Projects
 
