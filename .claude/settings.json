@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    {
+      "name": "talent-brain",
+      "source": { "source": "github", "repo": "jeromebanks/talent-brain" }
+    }
+  ]
+}
