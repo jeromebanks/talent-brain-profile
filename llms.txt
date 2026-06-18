@@ -18,7 +18,19 @@
 - [experience/ifwe.md](experience/ifwe.md): Tagged.com/if(we) — Senior Software Engineer, Analytics Infrastructure (2014-03–2015-07)
 - [experience/klout.md](experience/klout.md): Klout — Senior Software Engineer (2011-09–2014-02)
 - [experience/quantcast.md](experience/quantcast.md): Quantcast — Senior Software Engineer (2008-09–2011-09)
-- [experience/prior-experience.md](experience/prior-experience.md): Various companies — Software Engineer / Contractor (pre-2008)
+- [experience/pulse-veepers.md](experience/pulse-veepers.md): Pulse Entertainment/Veepers.com — Lead Java Developer (2007-05–2008-09)
+- [experience/bea-plumtree.md](experience/bea-plumtree.md): BEA BID Division/Plumtree Software — Sr. Software Engineer (2004-10–2007-05)
+- [experience/lawson.md](experience/lawson.md): Lawson Software — Technical Lead (2004-04–2004-10)
+- [experience/cyanea.md](experience/cyanea.md): Cyanea Systems — Sr. Software Engineer (2002-03–2004-04)
+- [experience/dicarta.md](experience/dicarta.md): diCarta — Sr. Staff Engineer (2000-06–2002-01)
+- [experience/infoseek-go.md](experience/infoseek-go.md): Infoseek/Go.com/Disney Internet Group — Staff Engineer (1999-02–2000-03)
+- [experience/bay-one.md](experience/bay-one.md): Bay One Technologies — Senior Software Engineer (1997-10–1999-02)
+- [experience/axiologic.md](experience/axiologic.md): Axiologic Corporation (contractor) — NatWest, Deutsche-Morgan Grenfell, Citibank (1995-02–1997-10)
+- [experience/lehman.md](experience/lehman.md): Lehman Brothers — Senior Programmer Analyst (1993-09–1995-02)
+- [experience/ofi.md](experience/ofi.md): OFI Corp. — Software Engineer (1993-02–1993-09)
+- [experience/timber-hill.md](experience/timber-hill.md): Timber Hill — Programmer/Analyst (1991-09–1993-03)
+- [experience/att.md](experience/att.md): AT&T — Consultant (1989-08–1991-10)
+- [experience/prior-experience.md](experience/prior-experience.md): Various companies — Software Engineer / Contractor (pre-2008, stub index)
 
 ## Projects
 

@@ -307,6 +307,35 @@ _Reference:_ [twitter.github.io/finagle](https://twitter.github.io/finagle/)
 
 ---
 
+## Enterprise & Systems (pre-Hadoop era)
+
+**Spring Framework** — proficient — historical  
+Used for IoC/dependency injection, AOP interceptors, and service composition at BEA/Plumtree and Pulse/Veepers. Developed custom Spring namespace handlers and Spring AOP-based monitoring integrations.  
+_Used at:_ [BEA/Plumtree](../experience/bea-plumtree.md), [Pulse/Veepers](../experience/pulse-veepers.md)  
+_Reference:_ [spring.io](https://spring.io)
+
+**J2EE / Enterprise Java** (EJB, Servlets, JMS, JMX, JNDI, LDAP) — proficient — historical  
+Enterprise Java platform used across multiple roles 2000–2008: EJB for business logic, JMS for messaging, JMX for monitoring and deployment automation, LDAP/JNDI for directory services.  
+_Used at:_ [diCarta](../experience/dicarta.md), [Cyanea Systems](../experience/cyanea.md), [BEA/Plumtree](../experience/bea-plumtree.md), [Infoseek/Go.com](../experience/infoseek-go.md)
+
+**Byte Code Modification** (BCEL, ASM, Javassist, AspectJ) — proficient — historical  
+Deep expertise in JVM bytecode modification for non-invasive instrumentation. Aspect-oriented data collection and memory leak detection at Cyanea; the "Hotdog" dynamic class modification framework at Quantcast (dependency injection, SEDA buffering, mapper chaining via Javassist).  
+_Used at:_ [Cyanea Systems](../experience/cyanea.md), [Quantcast](../experience/quantcast.md)
+
+**Application Servers** (WebSphere, WebLogic, jBoss, Tomcat) — proficient — historical  
+Deployed and worked with J2EE application servers across enterprise software roles; used WebSphere/WebLogic JMX APIs for installer automation at Cyanea.  
+_Used at:_ [Cyanea Systems](../experience/cyanea.md), [BEA/Plumtree](../experience/bea-plumtree.md), [Pulse/Veepers](../experience/pulse-veepers.md)
+
+**C#** — familiar — historical  
+Used in enterprise software roles; ported .NET Web Accelerator from .NET 1.1 to 2.0 at BEA/Plumtree.  
+_Used at:_ [BEA/Plumtree](../experience/bea-plumtree.md)
+
+**Greenplum** — familiar — historical  
+Listed in technologies from the 2011 era; distributed SQL analytics database.  
+_Reference:_ [greenplum.org](https://greenplum.org)
+
+---
+
 ## Open Source
 
 **Brickhouse** — founder & primary maintainer  
