@@ -15,31 +15,31 @@ ingested_sources:
 
 ## Context
 
-Developed big data infrastructure components and pipelines for a marketing analytics startup with access to an extensive unique data panel. Mentored and educated junior engineers on scalable Big Data techniques.
+Big data infrastructure and pipelines for a marketing analytics startup with access to an extensive unique data panel. Mentored junior engineers on scalable Big Data techniques.
 
 ## Contributions
 
-- **FunnelCube** – Developed Scala Spark libraries and pipelines for efficiently generating aggregates of e-commerce analytics across domain, brand, category, geo, and demographics dimensions, using the Cubism library. These metrics provide the basis of Jumpshot's E-commerce Insights product.
-- **Cubism** – Developed and supported a reusable Scala Spark DataFrame library for efficiently generating multidimensional aggregates ("cubes"). Developed efficient Scala implementation of KMV sketches for cardinality estimation and set similarity. Developed utilities for handling skew data with "salting," and for aggregating high-dimensional vectors, event sequences, and time series data. This library became the basis for multiple projects including data monitoring, anomaly detection, and marketing insights.
-- **Cubism Streaming** – Extended Cubism to Apache Spark Streaming, enabling generation of multidimensional aggregates on an ongoing basis at 5–30 minute frequency. Implemented a Kafka data quality monitoring system for rapid anomaly detection across multiple dimensions.
-- **Pigsicle** – Designed a Scala Spark library for emitting rows based on multiple conditions using a fast PEG SQL parser. Enabled the efficient generation of hundreds of different cookie-based audiences during a single pass over a massive user-feature dataset.
-- **WillRogers** – Developed Scala libraries and pipelines for taking snapshots of the Hive MetaStore into Hive tables, to enable analysis and monitoring of HDFS disk usage. Developed Spark/Hive UDFs for performing mass Hive DDL operations.
+### Cubism
+- what: reusable Scala Spark DataFrame library for multidimensional aggregates, with KMV sketches for cardinality estimation, salting for skew handling, and utilities for high-dimensional vectors, event sequences, and time series
+- stack: Scala, Apache Spark
+- impact: became the basis for multiple internal projects including data monitoring, anomaly detection, and marketing insights
 
-## Outcomes
+### FunnelCube
+- what: e-commerce analytics aggregate pipelines across domain, brand, category, geo, and demographics dimensions using Cubism
+- stack: Scala, Apache Spark, Cubism
+- impact: provides the basis for Jumpshot's E-commerce Insights product
 
-<!-- not yet captured -->
+### Cubism Streaming
+- what: extension of Cubism to Spark Streaming for continuous multidimensional aggregate generation, with Kafka data quality monitoring for rapid anomaly detection
+- stack: Apache Spark Streaming, Kafka, Scala
+- impact: 5–30 minute frequency aggregates with rapid anomaly detection across multiple dimensions
 
-## Decisions & Tradeoffs
+### Pigsicle
+- what: Scala Spark library for multi-condition row emission using a PEG SQL parser
+- stack: Scala, Apache Spark
+- impact: enabled efficient generation of hundreds of cookie-based audiences in a single pass over a massive user-feature dataset
 
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Scala, Apache Spark, Spark Streaming
-- Hive, HDFS
-- Kafka
-- KMV sketches
-
-## Team & Scope
-
-<!-- not yet captured -->
+### WillRogers
+- what: Hive MetaStore snapshot pipelines and mass DDL operation utilities for HDFS disk usage analysis and monitoring
+- stack: Scala, Apache Spark, Hive
+- impact: <!-- not yet captured -->

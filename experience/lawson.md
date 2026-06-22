@@ -19,22 +19,7 @@ Short-term engagement focused on performance analysis and improvement for enterp
 
 ## Contributions
 
-- **Performance Improvements** – Analyzed a Budgeting and Planning application to improve performance and scalability. Coordinated with RAS engineers to identify major bottlenecks involving thread contention, garbage collection, memory usage, and database access. Coded workaround solutions and proposed more scalable architectures for future development.
-
-## Outcomes
-
-<!-- not yet captured -->
-
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Java
-- JVM profiling (GC, thread contention analysis)
-- Database performance analysis
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Performance Analysis and Improvements
+- what: performance and scalability analysis of Budgeting and Planning application — identified bottlenecks in thread contention, GC, memory, and database access; coded workarounds and proposed scalable architectures
+- stack: Java, JVM profiling (GC, thread contention)
+- impact: <!-- not yet captured -->

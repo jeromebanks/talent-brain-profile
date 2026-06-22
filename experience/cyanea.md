@@ -15,34 +15,36 @@ ingested_sources:
 
 ## Context
 
-Designed and developed infrastructure components for an enterprise J2EE application management software startup.
+Infrastructure components for an enterprise J2EE application management software startup.
 
 ## Contributions
 
-- **Application Traps** – Designed and developed a subsystem for application-level traps using an event bus architecture. When specified application-level events occur (e.g., a request exceeding a time threshold), email is sent to monitoring users. Implemented front-end JSP/Servlet screens for trap management, introducing an MVC architecture to the organization. Developed an SNMP adaptor for traps to integrate with other system monitoring packages.
-- **Performance Improvements** – Implemented order-of-magnitude performance improvements in the "Publish Server" backend component. Improved scalability by reducing thread contention and avoiding unneeded synchronization.
-- **Aspect-Oriented Data Collector** – Designed and developed a prototype "Data Collector" component using aspect-oriented techniques. Used BCEL to bytecode-modify customer enterprise applications to include profiling instrumentation — without requiring source changes.
-- **Memory Leak Detector** – Designed and developed a prototype memory leak detector using bytecode modification to track "staleness" of objects in Java collections classes.
-- **UUID Generator** – Implemented a high-speed, scalable component for generating UUIDs according to the IETF standard.
-- **Installer** – Developed and maintained an installer that deploys and updates J2EE applications using WebSphere and WebLogic JMX APIs.
+### Application Traps
+- what: application-level trap subsystem using event bus architecture — email notification on threshold events, JSP/Servlet management UI, and SNMP adaptor for integration with external monitoring tools
+- stack: Java, JSP, Servlets, SNMP, event bus
+- impact: <!-- not yet captured -->
 
-## Outcomes
+### Performance Improvements
+- what: performance and scalability improvements to the Publish Server backend via reduced thread contention and synchronization
+- stack: Java
+- impact: order-of-magnitude performance improvement
 
-<!-- not yet captured -->
+### Aspect-Oriented Data Collector
+- what: prototype profiling instrumentation via bytecode modification of customer enterprise applications, without requiring source changes
+- stack: Java, BCEL, AspectJ
+- impact: <!-- not yet captured -->
 
-## Decisions & Tradeoffs
+### Memory Leak Detector
+- what: prototype memory leak detector via bytecode modification to track object staleness in Java collections
+- stack: Java, BCEL
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### UUID Generator
+- what: high-speed scalable UUID generator per IETF standard
+- stack: Java
+- impact: <!-- not yet captured -->
 
-## Tools & Methods
-
-- Java, J2EE
-- JSP, Servlets (MVC)
-- SNMP
-- BCEL (bytecode modification), AspectJ
-- WebSphere, WebLogic (JMX)
-- Event bus architecture
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Installer
+- what: installer for deploying and updating J2EE applications via WebSphere and WebLogic JMX APIs
+- stack: Java, WebSphere, WebLogic (JMX)
+- impact: <!-- not yet captured -->

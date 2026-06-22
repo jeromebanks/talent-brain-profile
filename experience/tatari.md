@@ -15,31 +15,21 @@ ingested_sources:
 
 ## Context
 
-Helped transition this TV AdTech company off of Postgres and Redshift and onto Spark and Databricks for data processing.
+Helped transition this TV AdTech company off of Postgres and Redshift and onto Spark and Databricks for data processing. <!-- team size, org structure: not yet captured -->
 
 ## Contributions
 
-- **Spark on Kubernetes** – Deployed Apache Spark onto AWS EKS Kubernetes via custom Helm Charts and Docker images. Extended a fork of Apache Livy for bug fixes and new features.
-- **Flexible Aggregator** – Developed a tool in Apache Spark for generating multi-dimensional aggregates in a "schema-less" flexible manner similar to OLAP cubes. Deployed ETL DAGs on Airflow to generate combined metrics across both linear and streaming TV.
-- **Zippo SparkSQL UDF library** – Developed and maintained a library of Scala Spark UDFs and UDAFs to support various data engineering use cases. Includes KMV Sketches for cardinality estimation, and ArgMax TopN UDAFs.
+### Spark on Kubernetes
+- what: deployment of Apache Spark onto AWS EKS with custom Helm charts and Docker images, with Livy fork bug fixes and new features
+- stack: Apache Spark, Kubernetes (AWS EKS), Helm, Docker, Apache Livy
+- impact: <!-- not yet captured -->
 
-## Outcomes
+### Flexible Aggregator
+- what: multi-dimensional aggregate tool in Spark with OLAP-style schema-less flexibility, deployed via Airflow ETL DAGs for combined linear and streaming TV metrics
+- stack: Apache Spark, Apache Airflow, Databricks
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
-
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Apache Spark, Databricks
-- Scala
-- Kubernetes (AWS EKS), Helm, Docker
-- Apache Livy
-- Apache Airflow
-- Postgres, Redshift (migrated from)
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Zippo SparkSQL UDF Library
+- what: Scala Spark UDF and UDAF library for data engineering use cases including KMV cardinality estimation and ArgMax TopN
+- stack: Scala, Apache Spark
+- impact: <!-- not yet captured -->

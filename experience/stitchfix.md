@@ -15,32 +15,31 @@ ingested_sources:
 
 ## Context
 
-Architected, designed, and developed platform components for a fashion recommendation e-commerce retailer.
+Platform components for a fashion recommendation e-commerce retailer. <!-- team size, org structure: not yet captured -->
 
 ## Contributions
 
-- **Otherworld — AWS Event Ingestion** – Developed a framework to ingest events into AWS S3 from HTTP REST and AMQP endpoints, with Kinesis as an intermediate persistence layer. Utilized the Akka reactive streams framework in Scala to handle bursts of traffic and error conditions gracefully. Developed Akka Reactive Streams connectors for AWS Kinesis, S3, Cloudwatch, and DynamoDB.
-- **Brule's Rules — Rules Engine** – Developed lightweight reactive rules engine in Scala to be embedded in various components like Spark or AWS Lambda functions. Developed an inner Scala DSL for rule definition, as well as a PEG Parser for an external DSL.
-- **Ponderosa — Rule evaluation at scale** – Implemented Spark Jobs and Hive UDFs to evaluate state changes via dynamic rules developed with the Brule's Rules DSL.
-- **Spark DynamoDB Connector** – Prototyped a Spark DataSource to read/write data from DynamoDB in a scalable distributed manner.
-- **Ginsberg — REST Service exposing Hive MetaStore** – Developed a REST microservice using Finagle and Finch with Scala to expose Hive database and table information. Evangelized "your service is a function" design for microservices.
+### Otherworld — AWS Event Ingestion
+- what: framework for ingesting events from HTTP REST and AMQP endpoints into AWS S3 via Kinesis, with Akka Reactive Streams connectors for AWS services
+- stack: Scala, Akka, Akka Reactive Streams, AWS Kinesis, S3, DynamoDB, CloudWatch, AMQP
+- impact: <!-- not yet captured -->
 
-## Outcomes
+### Brule's Rules — Rules Engine
+- what: lightweight reactive rules engine with inner Scala DSL and PEG parser external DSL, embeddable in Spark or Lambda functions
+- stack: Scala
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### Ponderosa — Rule Evaluation at Scale
+- what: Spark jobs and Hive UDFs for evaluating state changes via dynamic Brule's Rules DSL rules
+- stack: Apache Spark, Hive, Scala
+- impact: <!-- not yet captured -->
 
-## Decisions & Tradeoffs
+### Spark DynamoDB Connector
+- what: Spark DataSource for scalable distributed read/write from DynamoDB
+- stack: Apache Spark, DynamoDB
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Scala, Akka, Akka Reactive Streams
-- Apache Spark, Hive
-- AWS (Kinesis, S3, DynamoDB, CloudWatch, Lambda)
-- Finagle, Finch
-- AMQP
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Ginsberg — REST Service for Hive MetaStore
+- what: REST microservice exposing Hive database and table metadata using "your service is a function" microservice design
+- stack: Scala, Finagle, Finch
+- impact: <!-- not yet captured -->

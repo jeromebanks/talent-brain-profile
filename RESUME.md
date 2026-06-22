@@ -3,10 +3,16 @@ schema_version: "1.0"
 name: "Jerome Banks"
 current_title: "Senior Data Platform Engineer"
 location: ""
-email: "jerome_banks@yahoo.com"
+emails:
+  - "jerome.banks@gmail.com"
+  - "jerome_banks@yahoo.com"
 linkedin: "https://www.linkedin.com/pub/jerome-banks/1/77/832"
 github: "http://github.com/jeromebanks"
-website: "https://brickhouseconfessions.wordpress.com"
+websites:
+  - url: "https://brickhouseconfessions.wordpress.com"
+    label: "blog"
+  - url: "https://github.com/jeromebanks/talent-brain-profile"
+    label: "talent-brain profile"
 updated: "2026-06-18"
 ---
 

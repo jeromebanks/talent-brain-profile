@@ -15,31 +15,31 @@ ingested_sources:
 
 ## Context
 
-Advise and improve the data platform for healthcare document processing.
+Data platform for healthcare document processing. <!-- team size, org structure: not yet captured -->
+
+## Responsibilities
+
+### Production pipeline monitoring and support
+- scope: Spark ETL pipelines for healthcare document processing
 
 ## Contributions
 
-- **Trace Hardening** – Refactored current Spark ETL pipeline for telemetry information. Identified contention issues with multiple writes on Delta Lake tables, and refactored with Kafka as an intermediate buffer. Mentored others on how to better use Delta Lake for silver and gold aggregate tables.
-- **Spark Canary** – Designed and developed Python scripts to detect Spark zombie processes using the Spark Monitoring REST API. Investigated and diagnosed root causes of zombification.
-- **Spark Prometheus Grafana Charts** – Improved observability into production Spark ETL pipelines via Grafana charts of Prometheus metrics. Monitored production pipelines and identified issues with those charts. Evangelized better observability within the organization.
-- **OCR improvements** – Diagnosed issues in Spark OCR pipelines which were due to memory corruption. Optimized executor and memory settings to increase pipeline throughput.
+### Trace Hardening
+- what: refactor of Spark ETL telemetry pipeline to resolve Delta Lake write contention via Kafka as an intermediate buffer, with mentorship on Delta Lake silver/gold patterns
+- stack: Apache Spark, Delta Lake, Kafka
+- impact: <!-- not yet captured -->
 
-## Outcomes
+### Spark Canary
+- what: Python scripts to detect and diagnose Spark zombie processes via Spark Monitoring REST API
+- stack: Python, Spark Monitoring REST API
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### Spark Prometheus Grafana Charts
+- what: Grafana/Prometheus observability for production Spark ETL pipelines, with ongoing monitoring and evangelism of observability practices
+- stack: Prometheus, Grafana, Apache Spark
+- impact: <!-- not yet captured -->
 
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Apache Spark, Delta Lake
-- Kafka
-- Python
-- Prometheus, Grafana
-- Spark Monitoring REST API
-
-## Team & Scope
-
-<!-- not yet captured -->
+### OCR Improvements
+- what: diagnosis of memory corruption in Spark OCR pipelines and optimization of executor and memory settings
+- stack: Apache Spark
+- impact: increased pipeline throughput

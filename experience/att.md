@@ -15,26 +15,16 @@ ingested_sources:
 
 ## Context
 
-Implemented customized database applications for various business purposes, including compensation, marketing, and customer support.
+Customized database applications for various business purposes, including compensation, marketing, and customer support.
 
 ## Contributions
 
-- **RITS** – Reimplemented a tracking system using Informix to track repairs of AT&T hardware.
-- **Intelligent Workstations** – Developed applications for AT&T telemarketers on AT&T-developed windowing workstations.
+### RITS
+- what: reimplementation of AT&T hardware repair tracking system
+- stack: Informix
+- impact: <!-- not yet captured -->
 
-## Outcomes
-
-<!-- not yet captured -->
-
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Informix
-- AT&T windowing platform
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Intelligent Workstations
+- what: telemarketer applications on AT&T-developed windowing workstations
+- stack: AT&T windowing platform
+- impact: <!-- not yet captured -->

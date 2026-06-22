@@ -15,31 +15,39 @@ ingested_sources:
 
 ## Context
 
-Provided technical leadership in Hadoop, Hive, and other Big Data technologies. Implemented various MapReduce ETL pipelines in Hadoop and Hive processing large social media datasets. Investigated inefficiencies and optimized production jobs to meet SLAs and handle ever-increasing data volumes. Mentored junior engineers in the development of scalable and efficient Hadoop/Hive jobs. Provided advice and support to Operations for Hadoop cluster management, configuration, and optimization. Part of on-call support.
+Technical leadership in Hadoop, Hive, and Big Data for a social influence scoring company. Processing large social media datasets with MapReduce ETL pipelines. Part of on-call support. Mentored junior engineers; provided advice to Operations for cluster management and optimization.
+
+## Responsibilities
+
+### On-call and production support
+- scope: Hadoop cluster and production ETL pipelines for Klout score computation
+
+### Pipeline optimization and SLA management
+- scope: ongoing mandate to investigate inefficiencies and optimize production jobs as data volumes grew
 
 ## Contributions
 
-- **Maxwell — Next-Gen Klout Score** – Implemented Hadoop ETL pipeline for feature generation and calculation of the Klout score and moments. Optimized and refactored jobs to meet required SLA and support high data volumes and skewed input. Introduced KMV sketch sets for scalable reach estimation to overcome otherwise intractable bottlenecks. Evangelized the use of Hadoop, Hive, and common UDFs, and introduced a common programming model for data development within the company.
-- **Topic Thunder — Topic Assignment** – Implemented pipelines for feature generation for a new topic system, including topic assignment, determination of topical leaderboards, and generation of topical scores. Investigated various features generated from social media data for relevance in topic modeling. Implemented scalable Bayesian topic assignment based on a large number of text-based features.
-- **Brickhouse — Useful Hive UDFs** – Packaged common Hive UDFs used internally into an open source project, hosted at github.com/klout/brickhouse. Evangelized Brickhouse to the community at large, gave presentations at various tech meetups. Documented common data "recipes" and published a personal blog to educate developers about Brickhouse and robust Hadoop pipelines. Provided support for Brickhouse both internally and to the community.
-- **Analytics Warehouse** – Implemented various Hadoop pipelines supporting internal analytics warehouse.
-- **Satisfaction — Next-Gen Batch Scheduler** – Evangelized next-generation backward-chaining Hadoop scheduler to overcome operational deficiencies with Oozie and Jenkins. Implemented initial version with Scala, Akka, and Play! Framework.
+### Maxwell — Next-Gen Klout Score
+- what: Hadoop ETL pipeline for feature generation and calculation of the Klout score and moments, optimized for high data volumes and skewed input via KMV sketches for reach estimation
+- stack: Hadoop, MapReduce, Hive, KMV sketches
+- impact: met required SLA at scale; KMV sketches introduced as org-wide solution for scalable reach estimation
 
-## Outcomes
+### Topic Thunder — Topic Assignment
+- what: pipelines for topic assignment, topical leaderboards, and topical scores from social media features using Bayesian classification
+- stack: Hadoop, MapReduce, Hive
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### Brickhouse — Useful Hive UDFs
+- what: open-sourced common internal Hive UDFs as github.com/klout/brickhouse, with community evangelism, tech meetup presentations, and a public blog on Hadoop/Hive patterns
+- stack: Hive, Hadoop
+- impact: widely adopted open-source project; continues to be used across the industry
 
-## Decisions & Tradeoffs
+### Analytics Warehouse
+- what: Hadoop pipelines supporting internal analytics warehouse
+- stack: Hadoop, MapReduce, Hive
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Hadoop, MapReduce, Hive
-- Scala, Akka, Play! Framework
-- KMV sketches
-- Brickhouse (Hive UDFs)
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Satisfaction — Next-Gen Batch Scheduler
+- what: initial implementation of backward-chaining Hadoop scheduler to replace operational deficiencies in Oozie and Jenkins
+- stack: Scala, Akka, Play! Framework
+- impact: <!-- not yet captured -->

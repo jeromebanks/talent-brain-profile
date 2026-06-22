@@ -15,31 +15,31 @@ ingested_sources:
 
 ## Context
 
-Developed server-side applications and infrastructure for online stock trading (Discover Brokerage).
+Server-side applications and infrastructure for online stock trading (Discover Brokerage).
 
 ## Contributions
 
-- **BrokerSiteManager** – Designed and developed a CORBA server implemented in Java with Iona OrbixWeb to distribute requests to multiple brokers, utilizing role-based priority queues.
-- **Unit Testing Strategy** – Designed and developed a unit testing strategy for applications running under JavaWebServer, decoupling unit testing of business logic from the application server. The system records business use cases with a JavaWebServer and plays them back outside the web server, also generating Java code corresponding to recorded use cases.
-- **Distributed Testing Framework** – Proposed, designed and developed a distributed testing framework to facilitate testing of distributed systems, focusing on concurrency defects (deadlock, resource starvation) and providing runtime metrics (queue lengths, memory usage).
-- **QuoteServer** – Modified QuoteServer processes to support bond quote display and developed a real-time heartbeat process to guarantee the timeliness of bond quote information.
-- **BrokerApp** – Maintained a Java AWT client application implementing various fixes and enhancements.
+### BrokerSiteManager
+- what: CORBA server for distributing requests to multiple brokers with role-based priority queues
+- stack: Java, CORBA (Iona OrbixWeb)
+- impact: <!-- not yet captured -->
 
-## Outcomes
+### Unit Testing Strategy
+- what: unit testing strategy for JavaWebServer applications, decoupled from the app server via record/replay of business use cases
+- stack: Java, JavaWebServer
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### Distributed Testing Framework
+- what: distributed testing framework for concurrency defect detection (deadlock, resource starvation) with runtime metrics
+- stack: Java
+- impact: <!-- not yet captured -->
 
-## Decisions & Tradeoffs
+### QuoteServer
+- what: extension of QuoteServer for bond quote display and real-time heartbeat to guarantee timeliness of bond quote data
+- stack: Java
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Java, AWT
-- CORBA (Iona OrbixWeb)
-- JavaWebServer
-- Priority queues
-
-## Team & Scope
-
-<!-- not yet captured -->
+### BrokerApp
+- what: maintenance and enhancements to Java AWT client application
+- stack: Java, AWT
+- impact: <!-- not yet captured -->

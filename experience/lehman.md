@@ -15,28 +15,16 @@ ingested_sources:
 
 ## Context
 
-Designed and developed real-time decision-support systems for equity traders.
+Real-time decision-support systems for equity traders.
 
 ## Contributions
 
-- **Risk Management Prototype** – Used Teleuse and Sybase to rapidly develop application prototypes for a risk management system.
-- **Real-Time Risk Management System** – Designed and developed a real-time risk management system calculating financial formulas including option pricing models, sensitivities, and aggregate calculations. Values calculated on the basis of real-time price changes, distributed across processes/machines, and scalable to firm-wide level.
+### Risk Management Prototype
+- what: rapid application prototypes for a risk management system
+- stack: C++, Teleuse, Sybase
+- impact: <!-- not yet captured -->
 
-## Outcomes
-
-<!-- not yet captured -->
-
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- C++
-- Teleuse (GUI)
-- Sybase
-- Real-time option pricing models
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Real-Time Risk Management System
+- what: real-time risk management system calculating option pricing models, sensitivities, and aggregate calculations from real-time price changes, distributed across processes and machines
+- stack: C++, Sybase
+- impact: scalable to firm-wide level

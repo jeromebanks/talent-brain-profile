@@ -15,32 +15,31 @@ ingested_sources:
 
 ## Context
 
-Building next generation data experiences for GSK's scientists, engineers and decision makers.
+Building next-generation data experiences for GSK's scientists, engineers, and decision makers. <!-- team size, org structure, broader platform mission: not yet captured -->
+
+## Responsibilities
+
+### On-call and production support
+- scope: <!-- not yet captured -->
 
 ## Contributions
 
-- **Broad Data Institute Ingestion** – Wrote GCP Dataflow job for the ingestion of over 150TB of cell imaging data (contained in over 100 billion files) from S3 to GCP. Wrote Dataflow job to capture manifest of all transferred files, and shepherded job to completion.
-- **BigQuery Table Metadata** – Wrote Dataflow job to gather BigQuery table metadata (like storage size and partitioning information) and store in BigQuery, for analysis and optimization of migration from Hadoop on-premise cluster to GCP BigQuery.
-- **JDBC Ingestion** – Refactored GCP Workflow and Dataproc Spark Job for ingesting from multiple JDBC Sources (including Oracle, Postgres, MySQL and SQLServer) into BigQuery and GCS. Provided model for good practices in Spark development, and introduced unit and integration tests for Spark jobs into the organization.
-- **WFLinter** – Developed a git pre-commit tool for validating GCP Workflow YAML files before submission into CI/CD pipelines. Proposed SDLC development model for writing GCP Workflows, along with a testing framework for validating GCP Workflow logic.
+### Broad Data Institute Ingestion
+- what: GCP Dataflow pipeline for ingesting 150TB+ of cell imaging data (100B+ files) from S3 to GCP, with manifest capture of all transferred files
+- stack: GCP Dataflow, Apache Beam, GCS, S3
+- impact: 150TB+ cell imaging dataset from the Broad Data Institute migrated to GCP
 
-## Outcomes
+### BigQuery Table Metadata
+- what: Dataflow pipeline gathering BigQuery table metadata (storage size, partitioning) for analysis and optimization of on-premise Hadoop to GCP migration
+- stack: GCP Dataflow, Apache Beam, BigQuery
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### JDBC Ingestion
+- what: refactor of GCP Workflow and Dataproc Spark job for multi-source JDBC ingestion into BigQuery and GCS, with unit and integration test model introduced to the org
+- stack: GCP Workflows, Dataproc, Apache Spark, BigQuery, GCS, JDBC (Oracle, Postgres, MySQL, SQLServer)
+- impact: <!-- not yet captured -->
 
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- GCP Dataflow, Apache Beam
-- BigQuery, GCS
-- GCP Workflows, Dataproc
-- Apache Spark
-- JDBC (Oracle, Postgres, MySQL, SQLServer)
-- Git pre-commit hooks
-
-## Team & Scope
-
-<!-- not yet captured -->
+### WFLinter
+- what: git pre-commit tool for validating GCP Workflow YAML files before CI/CD submission, with proposed SDLC model and testing framework for Workflow logic
+- stack: Git pre-commit hooks, GCP Workflows
+- impact: <!-- not yet captured -->

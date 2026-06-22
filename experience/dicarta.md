@@ -15,39 +15,31 @@ ingested_sources:
 
 ## Context
 
-Designed and developed key infrastructure components for this contract management/CRM software vendor.
+Key infrastructure components for a contract management/CRM software vendor.
 
 ## Contributions
 
-- **XMLAPI Integration Framework** – Architected, designed, and developed an XML-based integration framework for EAI integrations of the diCarta application with ERP/CRM systems (I2, Ariba, Siebel). Comprised several sub-components:
-  - **XML Message Broker** – Core XML message-handling framework: header processing, security checking, message routing, and action invocation. Extensible CRUD message format for importing business objects with support for parent-child relations.
-  - **Streaming Adaptor Framework** – Single stream-based interface to the XMLAPI with protocol adaptors for HTTP, EJB/IIOP, JMS, and SMTP. Supported various deployment architectures (3-tier, HTTP-to-EJB, message-based) via configuration.
-  - **Authentication Framework** – User authentication supporting multiple credential types (password, certificate, shared-secret) with pluggable mechanisms. Developed an LDAP authentication module with brute-force protection.
-  - **XML-BO Mapping Service** – Orthogonal XML-based serialization for Java objects using SAX/JAXP. Supports XML validation, versioning, case-insensitive mode, and message enveloping. Automated code generation with M4.
-- **"Linkin" Single Sign-On** – Architected, designed, and developed a Single Sign-On solution to launch the diCarta application from an external application, bypassing the login page securely.
-- **Ariba Integration Toolkit** – Designed, developed, and documented a toolkit for integrating diCarta Negotiator with Ariba Buyer. Provided sample scenarios and code; supported key technical customers.
-- **Electronic Signatures** – Implemented a legally-binding solution to digitally sign negotiated contracts stored as Adobe PDF files, using Java Cryptography Extensions. Stored an XML representation of the signing ceremony in the PDF trailer.
-- **Jabber Chat Prototype** – Implemented a Swing/Applet chat applet to investigate adding IM capabilities to the application. Evaluated chat/IM solutions and studied the Jabber XML protocol.
+### XMLAPI Integration Framework
+- what: XML-based EAI integration framework for connecting diCarta with ERP/CRM systems (I2, Ariba, Siebel) — includes XML message broker, streaming adaptor (HTTP/EJB/JMS/SMTP), authentication framework (password/cert/shared-secret with LDAP module), and XML-BO mapping service with code generation
+- stack: Java, J2EE, EJB, XML, SAX, JAXP, JMS, HTTP, SMTP, LDAP, JNDI, M4
+- impact: <!-- not yet captured -->
 
-## Outcomes
+### Linkin Single Sign-On
+- what: SSO solution for launching diCarta from external applications, bypassing the login page securely
+- stack: Java, J2EE
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### Ariba Integration Toolkit
+- what: toolkit for integrating diCarta Negotiator with Ariba Buyer, with documentation, sample scenarios, and technical customer support
+- stack: Java, XML
+- impact: supported key technical customers
 
-## Decisions & Tradeoffs
+### Electronic Signatures
+- what: legally-binding digital signing solution for PDF contracts using Java Cryptography Extensions, with XML signing ceremony record stored in PDF trailer
+- stack: Java Cryptography Extensions (JCE), Adobe PDF, XML
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Java, J2EE, EJB
-- XML, SAX, JAXP, JAXM, JAXB
-- JMS, HTTP, SMTP
-- LDAP, JNDI
-- JDBC, Oracle
-- Java Cryptography Extensions (JCE)
-- M4 (code generation)
-- Adobe PDF
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Jabber Chat Prototype
+- what: prototype IM/chat applet to evaluate adding in-application chat capabilities
+- stack: Java, Swing, Jabber XML protocol
+- impact: <!-- not yet captured -->

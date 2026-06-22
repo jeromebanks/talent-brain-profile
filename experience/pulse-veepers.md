@@ -15,31 +15,16 @@ ingested_sources:
 
 ## Context
 
-Developed software for this small mobile multimedia avatar startup. Introduced rigorous development practices to a small team with high technical debt. Provided support for existing legacy systems, and interacted with customers to resolve issues.
+Small mobile multimedia avatar startup with high technical debt. Introduced rigorous development practices, supported legacy systems, and interacted with customers to resolve issues.
 
 ## Contributions
 
-- **ImageFactory** – Architected, designed, and implemented Java web services for BREW mobile clients for a custom wallpaper application. Designed highly-scalable client-facing service utilizing ehcache for caching and a data-streaming architecture for platform-specific content, wired together with Spring. Developed a customized Jackrabbit JCR content repository with extensions for remotely importing workspaces and deploying content on-demand. Developed a storefront web-application with Struts2 and Spring for staging content before deployment to production. Developed libraries for RMI streaming and lightweight RMI clustering.
-- **VMS** – Supported legacy Java/C++ service for rendering movies of speaking avatars. Investigated performance bottlenecks and proposed vertical-clustering approach for improved scalability on multi-core CPUs. Updated FFMPEG and various third-party libraries to resolve memory corruption issues. Added QCELP support for uploaded audio.
+### ImageFactory
+- what: highly-scalable Java web services for BREW mobile clients — custom wallpaper application with content repository, caching, streaming architecture, storefront, and RMI clustering
+- stack: Java, Spring, Jackrabbit JCR, ehcache, RMI, Struts2, BREW
+- impact: <!-- not yet captured -->
 
-## Outcomes
-
-<!-- not yet captured -->
-
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- Java, C++
-- Spring Framework, Struts2
-- Jackrabbit JCR (content repository)
-- ehcache
-- RMI
-- BREW (mobile platform)
-- FFMPEG
-
-## Team & Scope
-
-<!-- not yet captured -->
+### VMS
+- what: maintenance and performance improvements for legacy Java/C++ avatar movie rendering service — diagnosed performance bottlenecks, resolved memory corruption in FFMPEG, added QCELP audio support
+- stack: Java, C++, FFMPEG
+- impact: <!-- not yet captured -->

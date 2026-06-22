@@ -15,29 +15,26 @@ ingested_sources:
 
 ## Context
 
-Managed and oversaw back-office application software development for trade clearing and processing at this options trading firm.
+Back-office application software development for trade clearing and processing at an options trading firm.
 
 ## Contributions
 
-- **Security Framework** – Designed an object-oriented security framework in C++ modeling various financial securities traded by Timber Hill, as seen by the back office.
-- **Element Description Language** – Created a recursive language for describing financial securities. Developed an interpreter using Lex & Yacc and C++.
-- **OO DBMS Interface** – Designed and implemented an object-oriented interface to the Ingress relational DBMS in C++.
-- **Utility Base Class Libraries** – Designed and developed utility base class libraries for ongoing software development, including fundamental abstract data types: Stacks, Queues, BTrees, Bags, ReferenceCounters, and Tries.
+### Security Framework
+- what: object-oriented C++ framework modeling financial securities for back-office use
+- stack: C++
+- impact: <!-- not yet captured -->
 
-## Outcomes
+### Element Description Language
+- what: recursive language for describing financial securities, with a Lex/Yacc interpreter
+- stack: C++, Lex, Yacc
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### OO DBMS Interface
+- what: object-oriented C++ interface to the Ingress relational database
+- stack: C++, Ingress
+- impact: <!-- not yet captured -->
 
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- C++
-- Lex, Yacc
-- Ingress RDBMS
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Utility Base Class Libraries
+- what: C++ base class libraries with fundamental abstract data types — Stacks, Queues, BTrees, Bags, ReferenceCounters, Tries
+- stack: C++
+- impact: <!-- not yet captured -->

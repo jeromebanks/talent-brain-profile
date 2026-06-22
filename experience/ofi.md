@@ -15,29 +15,26 @@ ingested_sources:
 
 ## Context
 
-Developed software for this in-house consulting company.
+In-house consulting company. Software development across base library and database components.
 
 ## Contributions
 
-- Implemented efficient C++ container and iterator classes (binary trees, binary searches) for OFI's base libraries to improve overall application performance.
-- Implemented a window-based help system in X/OSF Motif.
-- Developed Query iterator classes in C++ to facilitate database access in a clear and intuitive manner.
-- Re-implemented various database classes using Oracle array fetches to significantly improve performance.
+### C++ Container Libraries
+- what: container and iterator classes (binary trees, binary searches) for OFI's base libraries
+- stack: C++
+- impact: improved overall application performance
 
-## Outcomes
+### X/Motif Help System
+- what: window-based help system
+- stack: C++, X/OSF Motif
+- impact: <!-- not yet captured -->
 
-<!-- not yet captured -->
+### Query Iterator Classes
+- what: query iterator classes for intuitive and clear database access
+- stack: C++, Oracle
+- impact: <!-- not yet captured -->
 
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-- C++
-- X/OSF Motif
-- Oracle
-
-## Team & Scope
-
-<!-- not yet captured -->
+### Database Array Fetch Optimization
+- what: reimplementation of database classes using Oracle array fetches
+- stack: C++, Oracle
+- impact: significantly improved performance

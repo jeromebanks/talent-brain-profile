@@ -40,20 +40,4 @@ ingested_sources:
 
 ## Contributions
 
-<!-- not yet captured — use /talent-brain:excavate to capture history from any of these roles -->
-
-## Outcomes
-
-<!-- not yet captured -->
-
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-<!-- not yet captured -->
-
-## Team & Scope
-
-<!-- not yet captured -->
+<!-- not yet captured — individual files exist for each of these roles; use /talent-brain:excavate to deepen any of them -->
