@@ -13,7 +13,7 @@ websites:
     label: "blog"
   - url: "https://github.com/jeromebanks/talent-brain-profile"
     label: "talent-brain profile"
-updated: "2026-06-18"
+updated: "2026-06-25"
 ---
 
 # Jerome Banks
@@ -43,31 +43,31 @@ Building next-generation data experiences for GSK's scientists and engineers. GC
 → [Deep dive](experience/onyx-gsk.md)
 
 ### Apixio — Staff Software Engineer, Data Platform (2022–2023)
-Improved data platform for healthcare document processing. Spark ETL telemetry, Delta Lake contention fixes, Spark zombie detection, and observability via Prometheus/Grafana.
+Stabilized a healthcare document processing pipeline for a small data platform team. Resolved chronic daily pipeline failures by rearchitecting Delta Lake telemetry writes through Kafka; built a zombie-process detector that caught silently stalled Spark jobs before they missed time-critical deadlines; and introduced Prometheus/Grafana observability where none had existed.
 → [Deep dive](experience/apixio.md)
 
 ### Tatari — Staff Data Platform Engineer (2021–2022)
-Helped transition a TV AdTech company from Postgres/Redshift onto Spark and Databricks. Spark on Kubernetes, multi-dimensional aggregation tooling, SparkSQL UDF library.
+Brought in to introduce Big Data to a TV AdTech company with no Spark experience and no budget for managed services. Stood up production Spark on Kubernetes as a zero-cost on-ramp; built multi-dimensional aggregation tooling for combined linear and streaming TV campaign metrics; and shipped a SparkSQL UDF library before the company eventually moved to Databricks.
 → [Deep dive](experience/tatari.md)
 
 ### Demandbase — Principal Big Data Engineer (2018–2021)
-Big Data ETL pipelines and infrastructure for account-based marketing. Apache Beam/Scio pipelines on GCP Dataflow, BigQuery optimization, NLP-based document parsing, real-time Pubsub streaming.
+Built and owned the core data pipelines behind Demandbase's intent signal product — web crawling at millions-of-URLs scale, multi-dimensional engagement aggregates re-architected with the Cubism pattern (adding geo, substantially faster and cheaper), and a streaming sync layer bridging cloud-scale processing with federated per-customer instances from an acquisition. Primary developer on most projects, from conception through production support.
 → [Deep dive](experience/demandbase.md)
 
 ### Jumpshot/Avast — Senior Software Engineer (2016–2018)
-Big data infrastructure for marketing analytics. Built the Cubism multidimensional aggregation library (reused across multiple products), Spark Streaming monitoring, and cookie audience generation at scale.
+Built big data infrastructure for a marketing analytics company with exclusive access to opt-in clickstream data from the Avast browser plugin — approximately 100M devices and 435M monthly active users. Key output: Cubism, a multidimensional aggregation library adopted across the San Francisco and Czech Republic engineering teams, which powered FunnelCube (the pipeline behind the E-commerce Insights SaaS product tracking cross-site consumer journeys — browse Walmart, buy on Amazon) and a Spark Streaming sentinel that detected Avast deployment misconfigurations within minutes before they could corrupt downstream pipelines. Also built WillRogers, HDFS disk usage and lineage tooling that supported a legally-mandated cluster migration from Amsterdam to Czech Republic.
 → [Deep dive](experience/jumpshot.md)
 
 ### StitchFix — Data Platform Engineer, Algorithms & Analytics (2015–2016)
-Platform components for fashion recommendation e-commerce. Akka reactive event ingestion on AWS, Scala rules engine, Spark DynamoDB connector, Hive MetaStore REST service.
+Platform team of ~6 supporting a large data science and algorithms org. Built production web event ingestion into AWS S3 via Kinesis; a Spark DataSource for reading and writing ML model weights to DynamoDB; a rules engine for customer cohort assignment for targeted marketing; and a Hive MetaStore REST service for internal tooling.
 → [Deep dive](experience/stitchfix.md)
 
 ### Tagged.com / if(we) — Senior Software Engineer, Analytics Infrastructure (2014–2015)
-Web analytics systems for a large social website. Event ingestion from Kafka, demographic aggregation pipelines into HBase, led production rollout of Satisfaction scheduler. Ongoing Brickhouse maintainer.
+Completed and shipped Satisfaction — the asset-based batch orchestrator started at Klout — in production at Tagged, running Ramblas (all application events from a 300M-member platform at half-hour cadence) and Pinkman (demographic aggregates across millions of segments for reach, retention, and engagement). Continued development of Brickhouse open-source UDF library and presented at internal and external meetups.
 → [Deep dive](experience/ifwe.md)
 
 ### Klout — Senior Software Engineer (2011–2014)
-Technical leadership in Hadoop and Hive for social influence scoring. Built the Klout Score ETL pipeline, topic assignment system, and founded Brickhouse open-source project.
+Technical leader for Big Data at a 50–100 person social influence startup. Built the pipelines behind Klout's topical influence scores — 10,000+ topics across hundreds of millions of users daily, with work contributing to two published research papers. Open-sourced Brickhouse (github.com/klout/brickhouse), a widely-adopted Hive UDF library that originated in an internal analytics warehouse. Designed Satisfaction, an asset-based batch orchestrator that predated Airflow and was later completed and open-sourced at Tagged/if(we).
 → [Deep dive](experience/klout.md)
 
 ### Quantcast — Senior Software Engineer (2008–2011)

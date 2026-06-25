@@ -9,13 +9,16 @@ employment_type: "full-time"
 ingested_sources:
   - file: "Resume02-2025 (Google Drive)"
     date: "2026-06-18"
+  - file: "excavation"
+    date: "2026-06-24"
+    note: "structured interview"
 ---
 
 # Klout — Senior Software Engineer
 
 ## Context
 
-Technical leadership in Hadoop, Hive, and Big Data for a social influence scoring company. Processing large social media datasets with MapReduce ETL pipelines. Part of on-call support. Mentored junior engineers; provided advice to Operations for cluster management and optimization.
+Technical leadership in Hadoop, Hive, and Big Data for a social influence scoring company. Small startup of 50–100 employees at peak; Jerome worked on teams of 3–6 with close collaboration across the org. Processing large social media datasets with MapReduce and Hive ETL pipelines. Part of on-call support. Mentored junior engineers; provided advice to Operations for cluster management and optimization.
 
 ## Responsibilities
 
@@ -34,8 +37,8 @@ Technical leadership in Hadoop, Hive, and Big Data for a social influence scorin
 
 ### Topic Thunder — Topic Assignment
 - what: pipelines for topic assignment, topical leaderboards, and topical scores from social media features using Bayesian classification
-- stack: Hadoop, MapReduce, Hive
-- impact: <!-- not yet captured -->
+- stack: Hadoop, MapReduce, Hive, HBase, Brickhouse UDFs
+- impact: shipped customer-facing topical influence scores and leaderboards at scale — 10,000+ topics across hundreds of millions of users, processed daily; work contributed to two published research papers (LASTA, 2014; Klout Topics, 2017) with Jerome acknowledged as contributor
 
 ### Brickhouse — Useful Hive UDFs
 - what: open-sourced common internal Hive UDFs as github.com/klout/brickhouse, with community evangelism, tech meetup presentations, and a public blog on Hadoop/Hive patterns
@@ -45,9 +48,9 @@ Technical leadership in Hadoop, Hive, and Big Data for a social influence scorin
 ### Analytics Warehouse
 - what: Hadoop pipelines supporting internal analytics warehouse
 - stack: Hadoop, MapReduce, Hive
-- impact: <!-- not yet captured -->
+- impact: internal BI reporting warehouse for klout.com web analytics; notable as the origin of the Hive UDF collection that was later open-sourced as Brickhouse — first adoption of SQL-based Hive pipelines at Klout in place of explicit MapReduce
 
 ### Satisfaction — Next-Gen Batch Scheduler
 - what: initial implementation of backward-chaining Hadoop scheduler to replace operational deficiencies in Oozie and Jenkins
 - stack: Scala, Akka, Play! Framework
-- impact: <!-- not yet captured -->
+- impact: prototype asset-based orchestrator (backward-chaining from target Hive tables) built to replace Oozie/Jenkins error recovery nightmare; not production-ready before Klout downsized; carried to Tagged/if(we) with agreement, where it completed and ran production pipelines; ultimately open-sourced before being eclipsed by Airflow
