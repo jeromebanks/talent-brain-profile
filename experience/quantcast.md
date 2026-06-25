@@ -11,13 +11,16 @@ ingested_sources:
     date: "2026-06-18"
   - file: "Resume 2011 (Google Drive)"
     date: "2026-06-18"
+  - file: "excavation"
+    date: "2026-06-24"
+    note: "structured interview"
 ---
 
 # Quantcast — Senior Software Engineer
 
 ## Context
 
-Large-scale Hadoop and MapReduce data processing for a web analytics and advertising startup.
+Quantcast is a web audience measurement and adtech company, founded in 2006 and among the first to apply machine learning to real-time audience insights at scale. Jerome joined in 2008 — early in the company's history, before its publisher measurement service received MRC accreditation in 2010. His team functioned as what would today be called a data platform team: developing and maintaining core measurement pipelines (including the Publisher daily reach job that drove Quantcast's flagship product), building job scheduling infrastructure, and carrying an on-call responsibility to react to pipeline failures. Team size varied over time — a small 2-person team in the early years, growing to 4–6 engineers later.
 
 ## Responsibilities
 
