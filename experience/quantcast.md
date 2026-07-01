@@ -33,9 +33,9 @@ Quantcast is a web audience measurement and adtech company, founded in 2006 and 
 ## Contributions
 
 ### PipeV3 — Daily Measurement Job
-- what: components of the Publisher daily job producing reach counts for all quantified web sites
+- what: key development and maintenance of the Publisher daily job producing daily reach counts for all sites with the Quantcast pixel; optimized jobs to meet scale and delivery requirements as the publisher base grew
 - stack: Hadoop, MapReduce, HDFS
-- impact: core daily measurement pipeline that drove Quantcast's publisher reach product for over 10 years before being retired
+- impact: calculated daily reach for all quantified web sites — the core output driving Quantcast's flagship publisher reach product, which ran for over 10 years
 
 ### Publisher Geo Job
 - what: extension of the daily publisher measurement pipeline to produce geo-level reach counts at city, DMA, state, and national granularity using Bloom filter merging; used MaxMind geo database with long-tail city filtering for tractability; XUnits aggregation hierarchy rolled city-level data up through DMA, state, and national in one pass; multi-threaded multi-output reducers used to fan out aggregated results across granularity levels in a single pass
@@ -45,9 +45,9 @@ Quantcast is a web audience measurement and adtech company, founded in 2006 and 
 ### Datacore Framework
 - what: Ruby framework for scheduling, executing, monitoring, and managing Quantcast's production Hadoop jobs — with notifications, retry logic, and dependency management
 - stack: Ruby, Hadoop
-- impact: load-bearing production job scheduler for Quantcast's Hadoop pipelines; early exploration of dependency-based scheduling ideas that later influenced the design of Satisfaction
+- impact: automated the management and monitoring of Quantcast's production Hadoop cluster jobs — scheduling, execution, notifications, retry, and dependency management in one system; early exploration of dependency-based scheduling ideas that later influenced the design of Satisfaction
 
 ### Hotdog — RMR Serialization
-- what: serialization framework for Quantcast-specific Hadoop POJOs built within the RMR (Relational MapReduce) ecosystem, enabling object-level MapReduce logic without manual ser/de boilerplate; predated or contemporaneous with Kryo
-- stack: Java, Hadoop, MapReduce
+- what: serialization framework for Quantcast-specific Hadoop POJOs, implemented using bytecode modification (Javassist) to dynamically enable dependency injection, SEDA buffering, Mapper chaining, and multi-threaded multi-output reducers — object-level MapReduce logic without manual ser/de boilerplate; predated or contemporaneous with Kryo
+- stack: Java, Hadoop, MapReduce, Javassist
 - impact: reduced serialization overhead in Jerome's own pipelines by a few percentage points; not broadly adopted but a proactive initiative to remove friction he identified himself

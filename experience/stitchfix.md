@@ -36,7 +36,7 @@ Platform components for a fashion recommendation e-commerce retailer. Small plat
 ### Otherworld — AWS Event Ingestion
 - what: framework for ingesting events from HTTP REST and AMQP endpoints into AWS S3 via Kinesis, with Akka Reactive Streams connectors for AWS services
 - stack: Scala, Akka, Akka Reactive Streams, AWS Kinesis, S3, DynamoDB, CloudWatch, AMQP
-- impact: production web analytics event ingestion pipeline for StitchFix.com — HTTP and AMQP events into AWS S3 via Kinesis using Akka Reactive Streams
+- impact: production web analytics event ingestion pipeline for StitchFix.com — HTTP and AMQP events into AWS S3 via Kinesis using Akka Reactive Streams specifically to handle bursts of traffic and error conditions gracefully
 
 ### Brule's Rules — Rules Engine
 - what: lightweight reactive rules engine with inner Scala DSL and PEG parser external DSL, embeddable in Spark or Lambda functions

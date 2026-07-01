@@ -335,8 +335,25 @@ For consulting/contract roles with multiple clients, use H3 client sections and 
            or <!-- not yet captured -->]
 ```
 
-**Decisions & Tradeoffs:** Not captured in experience files. Lives in `behavioural/` (future extension)
-for interview prep and system design depth. Does not belong in the resume knowledge graph.
+For major initiatives that warrant deeper documentation, extend the atom with optional `####` sub-sections immediately following the atom bullets. The atom remains the primary indexable unit; sub-sections add depth for richer resume generation, interview prep, and agent context:
+
+```markdown
+#### Problem
+[What gap or constraint existed. Why it mattered. What would have happened without it.]
+
+#### What I Built
+[More detailed account of the approach, design decisions, and implementation specifics.]
+
+#### Technical Decisions
+[Key choices, trade-offs considered and rejected, surprising constraints or failure modes.]
+
+#### Through-Line
+[How this connects to a broader capability pattern or career trajectory.]
+```
+
+**When to use deep-dive sections:** major initiatives with non-obvious technical decisions, migrations with before/after metrics, or work where the atom alone would lose signal important for targeting specific roles.
+
+**Projects vs experience deep dives:** Use `projects/` only for public/open-source work or work that spans multiple employers. Internal single-employer initiatives belong as contribution atoms (with optional deep-dive sections) in the experience file — not as separate project files.
 
 ---
 

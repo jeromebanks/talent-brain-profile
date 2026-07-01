@@ -3,7 +3,7 @@ company: "Demandbase"
 slug: "demandbase"
 title: "Principal Big Data Engineer"
 start: "2018-09"
-end: "2021-02"
+end: "2020-02"
 location: ""
 employment_type: "full-time"
 ingested_sources:
@@ -48,9 +48,9 @@ Account-based marketing platform with a core IP-to-company mapping technology. J
 ### Intent Pipeline
 - what: optimization and extension of legacy BigQuery pipelines on Airflow to reduce slot usage and meet critical SLAs
 - stack: BigQuery, Apache Airflow
-- impact: drastically reduced BigQuery slot usage; DAGs met critical business SLAs
+- impact: reduced BigQuery slot usage by approximately an order of magnitude — DAGs had been failing by exceeding quota and missing critical business SLAs; fixes restored and sustained pipeline reliability
 
 ### Bumblebee Processing Framework
 - what: streaming synchronization framework for distributed tenant instances, with near real-time updates and Pulsar-to-PubSub bridge
 - stack: Apache Beam, Spotify Scio, GCP Dataflow, Apache Pulsar, GCP Pubsub, Prometheus, Grafana
-- impact: enabled real-time synchronization between Demandbase's cloud-scale pipeline and the federated per-customer instances (each with local in-memory data) acquired from a startup; kept keyword updates in sync and triggered downstream processing jobs across both systems
+- impact: enabled real-time synchronization between Demandbase's cloud-scale pipeline and the federated per-customer instances (each with local in-memory data) acquired from a startup; kept keyword updates in sync and triggered downstream processing jobs across both systems; Prometheus monitors and Grafana charts developed for sync health alerting

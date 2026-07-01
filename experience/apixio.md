@@ -51,4 +51,4 @@ Data platform for healthcare document processing. Small team of 4–5 engineers 
 ### OCR Improvements
 - what: diagnosis of memory corruption in Spark OCR pipelines and optimization of executor and memory settings
 - stack: Apache Spark
-- impact: resolved memory corruption and increased pipeline throughput
+- impact: resolved memory issues that were causing pipeline stalls; restored stable throughput to the healthcare document processing pipeline

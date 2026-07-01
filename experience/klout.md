@@ -9,6 +9,8 @@ employment_type: "full-time"
 ingested_sources:
   - file: "Resume02-2025 (Google Drive)"
     date: "2026-06-18"
+  - file: "Resume-2014 (local)"
+    date: "2026-06-29"
   - file: "excavation"
     date: "2026-06-24"
     note: "structured interview"
@@ -28,15 +30,18 @@ Technical leadership in Hadoop, Hive, and Big Data for a social influence scorin
 ### Pipeline optimization and SLA management
 - scope: ongoing mandate to investigate inefficiencies and optimize production jobs as data volumes grew
 
+### Hive and common UDF evangelism
+- scope: evangelized use of Hadoop Hive and common UDFs across the engineering org; introduced a common programming model for data development that replaced one-off MapReduce approaches
+
 ## Contributions
 
 ### Maxwell — Next-Gen Klout Score
 - what: Hadoop ETL pipeline for feature generation and calculation of the Klout score and moments, optimized for high data volumes and skewed input via KMV sketches for reach estimation
 - stack: Hadoop, MapReduce, Hive, KMV sketches
-- impact: met required SLA at scale; KMV sketches introduced as org-wide solution for scalable reach estimation
+- impact: met required SLA at scale — computing Klout scores across Klout's full user base (~750M users, ~45B daily social interactions at peak); KMV sketches resolved otherwise-intractable reach estimation bottlenecks and were adopted as the org-wide solution
 
 ### Topic Thunder — Topic Assignment
-- what: pipelines for topic assignment, topical leaderboards, and topical scores from social media features using Bayesian classification
+- what: investigation of social media features for topic relevance, leading to a Bayesian classification approach; pipelines for topic assignment, topical leaderboards, and topical scores
 - stack: Hadoop, MapReduce, Hive, HBase, Brickhouse UDFs
 - impact: shipped customer-facing topical influence scores and leaderboards at scale — 10,000+ topics across hundreds of millions of users, processed daily; work contributed to two published research papers (LASTA, 2014; Klout Topics, 2017) with Jerome acknowledged as contributor
 

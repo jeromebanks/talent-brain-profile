@@ -9,22 +9,32 @@ employment_type: "contract"
 ingested_sources:
   - file: "Resume 2011 (Google Drive)"
     date: "2026-06-18"
+  - file: "Resume-2002 (local)"
+    date: "2026-06-29"
+  - file: "excavation"
+    date: "2026-06-29"
+    note: "structured interview"
 ---
 
 # AT&T — Consultant
 
 ## Context
 
-Customized database applications for various business purposes, including compensation, marketing, and customer support.
+Jerome's first job out of Caltech (1989), employed by Zyga — a small ~10-15 person boutique consulting firm focused on AT&T contracts. Two phases: an initial project-based engagement building the AT&T salesperson compensation system, followed by an embedded period within an AT&T team working on various internal projects.
 
 ## Contributions
+
+### Compensation System
+- what: commission calculation pipeline for AT&T hardware salespeople
+- stack: Oracle, bash, awk, Unix
+- impact: early SQL-based data pipeline computing hardware sales commissions across AT&T's sales organization
 
 ### RITS
 - what: reimplementation of AT&T hardware repair tracking system
 - stack: Informix
-- impact: <!-- not yet captured -->
+- impact: updated to handle larger data volumes for AT&T's hardware repair tracking operations
 
 ### Intelligent Workstations
-- what: telemarketer applications on AT&T-developed windowing workstations
+- what: customer support and telemarketing applications on AT&T's proprietary windowing workstations (pre-Windows, pre-Mac, pre-X Windows)
 - stack: AT&T windowing platform
-- impact: <!-- not yet captured -->
+- impact: supported AT&T customer service reps handling hardware repair inquiries and long-distance service telemarketing

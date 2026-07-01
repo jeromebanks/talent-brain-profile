@@ -39,9 +39,9 @@ Big data infrastructure and pipelines for a marketing analytics startup with acc
 ## Contributions
 
 ### Cubism
-- what: reusable Scala Spark DataFrame library for multidimensional aggregates, with KMV sketches for cardinality estimation, salting for skew handling, and utilities for high-dimensional vectors, event sequences, and time series
+- what: reusable Scala Spark DataFrame library for multidimensional aggregates, with KMV sketches for cardinality estimation and set similarity, salting for skew handling, and utilities for high-dimensional vectors, event sequences, and time series
 - stack: Scala, Apache Spark
-- impact: adopted by both the San Francisco and Czech Republic engineering teams; served as the basis for FunnelCube, WillRogers, and streaming browser-type aggregates; used in both internal analytics and customer-facing products
+- impact: adopted by both the San Francisco and Czech Republic engineering teams; served as the basis for FunnelCube, WillRogers, and streaming browser-type aggregates; KMV sketches enabled audience overlap analysis (set similarity) in addition to cardinality estimation; Cubism itself formed the basis for data monitoring, anomaly detection, and marketing insights infrastructure; used in both internal analytics and customer-facing products
 
 ### FunnelCube
 - what: e-commerce analytics aggregate pipelines across domain, brand, category, geo, and demographics dimensions using Cubism; metrics include interaction, add-to-cart, start-checkout, and conversion counts, funnel sessions, estimated reach, time to conversion, cross-site and cross-brand interactions, upstream keywords, and dimensional ranking
@@ -49,7 +49,7 @@ Big data infrastructure and pipelines for a marketing analytics startup with acc
 - impact: powered Jumpshot's E-commerce Insights SaaS product, used by brand marketers and e-commerce sites to track cross-site consumer journeys (browse Walmart → purchase on Amazon; abandon Adidas cart → purchase at Nike)
 
 ### Cubism Streaming
-- what: extension of Cubism to Spark Streaming for continuous multidimensional aggregation of browser-type metrics from the Avast clickstream, with Kafka-based data quality monitoring for rapid anomaly detection
+- what: extension of Cubism to Spark Streaming for continuous multidimensional aggregation of browser-type metrics from the Avast clickstream at 5-30 minute intervals, with Kafka-based data quality monitoring for rapid anomaly detection
 - stack: Apache Spark Streaming, Kafka, Scala
 - impact: served as a sentinel against Avast browser plugin deployment misconfigurations — enabled the Data Processing team to detect data quality anomalies within minutes and halt downstream processing before corrupted data could propagate; without it, a silent misconfiguration in an Avast deployment could poison the entire pipeline
 

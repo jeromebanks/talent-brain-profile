@@ -39,16 +39,16 @@ Analytics infrastructure for a large social website. Small team of 3–4 data en
 - impact: ingested all application events from Tagged.com — a platform with 300M registered members and tens of millions of monthly active users — into HDFS at half-hour cadence; reliable, continuous production pipeline feeding downstream Pinkman aggregation
 
 ### Pinkman — Small Batch Event Aggregation
-- what: user-session generation and demographic aggregate pipelines producing reach, session, and action counts for millions of demographic segments (geo, device, gender, age, etc.) at hourly and multi-day rollup frequencies
+- what: user-session generation and demographic aggregate pipelines producing reach, session, and action counts for millions of demographic segments (geo, device, gender, age, etc.) across 1, 3, 7, 14, and 30-day rollup windows; also generated per-event aggregates across a large number of event types
 - stack: Hive, HBase, Brickhouse, HDFS
-- impact: daily aggregate coverage across millions of demographic segments for reach, retention, engagement, and spammer activity metrics
+- impact: daily aggregate coverage across millions of demographic segments for reach, retention, engagement, and spammer activity metrics; per-event coverage provided a second dimension of measurement across the full Tagged.com event space
 
 ### Satisfaction — Next-Gen Batch Scheduler
 - what: dependency-based Hadoop workflow scheduler with Scala DSL, Play! UI, Akka engine, and embedded Hive driver — taken from prototype to production and open-sourced
 - stack: Scala, Play! Framework, Akka, Hive
-- impact: moved from prototype to robust production system; open-sourced and presented at meetups
+- impact: completed and shipped to production as the scheduler running Ramblas (event ingestion) and Pinkman (demographic aggregates) at if(we); overcame the operational deficiencies (manual error recovery, poor retry handling) that made Oozie and Jenkins unsuitable at scale; open-sourced and presented at meetups
 
 ### Brickhouse — Useful Hive UDFs
-- what: curation and extension of open-source Hive UDF library — merged PRs, community support, new HBase UDFs, demographic XUnits, and sessionization UDFs
+- what: curation and extension of open-source Hive UDF library — merged PRs, StackOverflow community support, new HBase UDFs, demographic XUnits, and sessionization UDFs; continued evangelism via blog (brickhouseconfessions.wordpress.com) and meetup presentations
 - stack: Hive, HBase, HDFS
 - impact: widely adopted by data companies; forked and cloned by a large number of organizations

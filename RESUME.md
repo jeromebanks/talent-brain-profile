@@ -38,19 +38,19 @@ _Senior Data Platform Engineer with deep roots in Hadoop/Spark ecosystems and a 
 
 ## Experience
 
-### Onyx GSK — Senior Data Platform Engineer (2023–present)
-Building next-generation data experiences for GSK's scientists and engineers. GCP Dataflow pipelines for 150TB+ cell imaging ingestion, BigQuery metadata tooling, JDBC ingestion refactor, and WFLinter pre-commit tooling.
+### Onyx GSK — Senior Data Platform Engineer (2023–2026)
+Data platform and pipeline engineering for GSK's scientific and bioinformatics workloads — GCP Dataflow ingestion of 150TB+ cell imaging data, and Nextflow/GCP Batch migrations for the phenomics and 3D cell-segmentation pipelines. Built nf-forge, an AI-assisted approach for generating Nextflow pipelines from existing scientific code (first proven by migrating an HRD-determination workflow in ~4–5 days), plus MCP tooling for GCP operations (adopted by the team for pipeline debugging) and a POC exposing Nextflow pipeline APIs to AI agents. Also built internal Claude Code skills for PR review, JIRA automation, and adversarial code review to raise engineering rigor across the team.
 → [Deep dive](experience/onyx-gsk.md)
 
 ### Apixio — Staff Software Engineer, Data Platform (2022–2023)
 Stabilized a healthcare document processing pipeline for a small data platform team. Resolved chronic daily pipeline failures by rearchitecting Delta Lake telemetry writes through Kafka; built a zombie-process detector that caught silently stalled Spark jobs before they missed time-critical deadlines; and introduced Prometheus/Grafana observability where none had existed.
 → [Deep dive](experience/apixio.md)
 
-### Tatari — Staff Data Platform Engineer (2021–2022)
+### Tatari — Staff Data Platform Engineer (2020–2022)
 Brought in to introduce Big Data to a TV AdTech company with no Spark experience and no budget for managed services. Stood up production Spark on Kubernetes as a zero-cost on-ramp; built multi-dimensional aggregation tooling for combined linear and streaming TV campaign metrics; and shipped a SparkSQL UDF library before the company eventually moved to Databricks.
 → [Deep dive](experience/tatari.md)
 
-### Demandbase — Principal Big Data Engineer (2018–2021)
+### Demandbase — Principal Big Data Engineer (2018–2020)
 Built and owned the core data pipelines behind Demandbase's intent signal product — web crawling at millions-of-URLs scale, multi-dimensional engagement aggregates re-architected with the Cubism pattern (adding geo, substantially faster and cheaper), and a streaming sync layer bridging cloud-scale processing with federated per-customer instances from an acquisition. Primary developer on most projects, from conception through production support.
 → [Deep dive](experience/demandbase.md)
 
@@ -75,51 +75,51 @@ Hadoop/MapReduce pipelines for web analytics and advertising. Publisher daily me
 → [Deep dive](experience/quantcast.md)
 
 ### Pulse Entertainment / Veepers.com — Lead Java Developer (2007–2008)
-Mobile multimedia avatar startup; designed scalable image delivery web services for BREW clients using Spring and Jackrabbit JCR, while stabilizing a legacy C++ avatar rendering system.
+Primary backend engineer at a San Francisco mobile multimedia startup whose Veepers Media System (VMS) delivered animated speaking avatar characters to Verizon Wireless, AT&T, and KDDI customers across multiple countries. Built scalable Java services for three consumer products — personalized video messaging, custom mobile wallpapers, and a holiday-spiking e-card service — plus a custom C++ JSON parser for the BREW mobile client where no library existed.
 → [Deep dive](experience/pulse-veepers.md)
 
 ### BEA BID Division / Plumtree Software — Sr. Software Engineer (2004–2007)
-Enterprise portal and SOA infrastructure; designed Spring/JMS-based remoting framework, contributed to JSR-168 portlet container, and developed CMS extensions.
+Backend and developer platform engineer at Plumtree Software (acquired by BEA for ~$200M in 2005) across three teams: designed and evangelized the org-wide Spring/JMS remoting stack adopted by enterprise customers' engineering teams, extended the Publisher CMS into a public Enterprise Developer Kit, and implemented the CMS workflow notification service — while advocating Spring dependency injection and unit testing culture across the engineering org.
 → [Deep dive](experience/bea-plumtree.md)
 
 ### Lawson Software — Technical Lead (2004)
-Short engagement; analyzed and improved performance of a Budgeting and Planning application, identifying JVM thread contention and database bottlenecks.
+Six-month engagement at an enterprise ERP vendor; analyzed performance of a Budgeting and Planning application, identified JVM thread contention and database bottlenecks, and delivered architectural recommendations — engagement too short to implement changes.
 → [Deep dive](experience/lawson.md)
 
 ### Cyanea Systems — Sr. Software Engineer (2002–2004)
-Enterprise J2EE application management startup; built monitoring infrastructure using bytecode modification (BCEL/AspectJ) for non-invasive profiling and application trapping.
+Early APM startup (pre-New Relic era) whose product Cyanea/One was resold by IBM as WebSphere Studio Application Monitor and later acquired by IBM outright; independently developed a bytecode modification instrumentation agent (Asprobe) to profile customer J2EE apps without source changes — the same approach Lew Cirne's Wily Technology was pioneering at the same time. Also built the SNMP monitoring integration and delivered order-of-magnitude performance improvements to the core backend.
 → [Deep dive](experience/cyanea.md)
 
 ### diCarta — Sr. Staff Engineer (2000–2002)
-Contract management/CRM vendor; architected an XML-based EAI integration framework (XMLAPI) supporting HTTP, JMS, EJB, and SMTP, plus SSO and digital signature capabilities.
+Contract management/CRM vendor; architected the XMLAPI integration framework — an XML-based EAI layer with streaming adaptors (HTTP, JMS, EJB, SMTP), pluggable auth, and XML-BO mapping — used by Professional Services and partner SIs to deploy customer integrations with I2, Ariba, and Siebel. Also built Linkin SSO (single-click launch from Ariba Buyer and I2 into diCarta with automatic auth) and an early legally-binding electronic signature feature for PDF contracts — a key product differentiator at the newly-viable e-signature era (ESIGN Act, 2000). Company later acquired by Emptoris (2006), then IBM (2012).
 → [Deep dive](experience/dicarta.md)
 
 ### Infoseek / Go.com / Disney Internet Group — Staff Engineer (1999–2000)
-E-commerce infrastructure for a major media portal; built transaction messaging, credit card authorization, and a reusable component design pattern adopted across the engineering org.
+E-commerce platform engineer at Go.com (Disney's ~8M-user internet portal, formed from Starwave + Infoseek). Built the topic ontology navigation layer for the portal, payment processing for Go.com's live auctions product, async transaction messaging infrastructure, and a reusable component pattern (Lego) adopted by the e-commerce team. Left after the full Disney acquisition shifted the culture from startup to corporate.
 → [Deep dive](experience/infoseek-go.md)
 
 ### Bay One Technologies — Senior Software Engineer (1997–1999)
-Online stock trading infrastructure; implemented a CORBA-based broker distribution server and a novel unit testing framework for server-side Java applications.
+Software subsidiary powering Discover Brokerage Direct (Lombard Securities, acquired by Dean Witter → Morgan Stanley). Built BrokerSiteManager, the CORBA-based compliance routing layer that distributed pending trades to Series 7-licensed brokers for mandatory human approval before execution. Also added bond trading capability to the platform, introduced unit testing practices to the team, and built a distributed concurrency testing framework for a system where deadlocks had real financial consequences.
 → [Deep dive](experience/bay-one.md)
 
 ### Axiologic Corporation (contractor) — NatWest / Deutsche-Morgan Grenfell / Citibank (1995–1997)
-Independent contractor at three Wall Street firms; built real-time trading analytics in C++, quantitative finance libraries, and data conversion systems for derivative trading platforms.
+Corp-to-corp consultant at three Wall Street firms. At NatWest and Deutsche-Morgan Grenfell, embedded directly with the trading desk — educating on technologies and introducing best practices alongside the delivery work. Built PairTrader and PairMonitor for NatWest's live pairs trading strategy (millions under management, used by traders in production); surfaced multiple arbitrage opportunities at Deutsche-Morgan Grenfell by scanning SEC Edgar filings for keyword signals. At Citibank, led the data migration from a legacy Clipper system to CDS for the production release of a new global swaps trading platform.
 → [Deep dive](experience/axiologic.md)
 
 ### Lehman Brothers — Senior Programmer Analyst (1993–1995)
-Designed and built a real-time distributed risk management system for equity traders, calculating option pricing models across processes and machines.
+Built and deployed a real-time risk management system for equity traders across multiple desks — calculating Greek option metrics (delta, gamma, theta, etc.) from live price and position changes, displayed in a flashing spreadsheet-like X Windows interface. Event-based distributed C++ architecture, scalable to firm-wide level, ahead of its time for 1993.
 → [Deep dive](experience/lehman.md)
 
 ### OFI Corp. — Software Engineer (1993)
-Implemented C++ container and iterator libraries and Oracle database performance improvements for an in-house consulting firm.
+Project contracting firm ("Office of the Future") whose major engagement was with General Motors on CAFE fuel efficiency standards software. Implemented foundational C++ container and iterator libraries (pre-STL era — binary search had to be written by hand), a window-based help system, and Oracle database performance improvements via array fetch reimplementation.
 → [Deep dive](experience/ofi.md)
 
-### Timber Hill — Programmer/Analyst (1991–1993)
-Back-office systems for options trading; designed an OO security modeling framework in C++ and created a domain-specific language for describing financial instruments (with Lex/Yacc interpreter).
+### Timber Hill — Programmer/Analyst / Tech Lead (1991–1993)
+Back-office systems for Thomas Peterffy's options trading firm (predecessor to Interactive Brokers). Tech lead for a 3-person team responsible for ensuring all trades cleared. Built an OO security modeling framework in C++, a domain-specific language (Element Description Language) for representing exotic financial instruments with a Lex/Yacc interpreter, an OO persistent-object interface to Ingress, and foundational ADT libraries — all pre-STL.
 → [Deep dive](experience/timber-hill.md)
 
-### AT&T — Consultant (1989–1991)
-Early career engagement implementing Informix-based hardware tracking and business applications.
+### AT&T — Consultant via Zyga (1989–1991)
+First job out of Caltech, employed by Zyga (a small boutique consulting firm focused on AT&T). Built an early Oracle/Unix commission calculation pipeline for AT&T's hardware sales org, then embedded within an AT&T team building customer support and telemarketing applications on AT&T's proprietary windowing workstations (pre-Windows, pre-Mac, pre-X Windows) and reimplementing the hardware repair tracking system for larger data volumes.
 → [Deep dive](experience/att.md)
 
 ## Selected Projects

@@ -2,7 +2,7 @@
 company: "Tatari"
 slug: "tatari"
 title: "Staff Data Platform Engineer"
-start: "2021-02"
+start: "2020-02"
 end: "2022-07"
 location: ""
 employment_type: "full-time"
