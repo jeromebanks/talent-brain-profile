@@ -1,9 +1,11 @@
 ---
 name: "Brickhouse"
 slug: "brickhouse"
+type: "open-source"
+status: "archived"
 company: "Klout (open-sourced)"
 start: "2012-01"
-end: null
+end: "2015-07"
 url: "http://github.com/klout/brickhouse"
 ingested_sources:
   - file: "Resume02-2025 (Google Drive)"

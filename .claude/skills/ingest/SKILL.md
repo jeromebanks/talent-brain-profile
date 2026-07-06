@@ -26,7 +26,7 @@ Process each input file:
 Read the file directly. Extract structured career data per the extraction schema below.
 
 ### LinkedIn ZIP export
-Run: `unzip -o "<file>" -d /tmp/talent-brain:ingest-$(date +%s)/`
+Run: `unzip -o "<file>" -d /tmp/talent-brain-ingest-$(date +%s)/`
 
 Then read whichever of these files are present:
 - `Positions.csv` → work history
@@ -87,7 +87,7 @@ Check the current directory for an existing profile:
 - Read `RESUME.md` if present
 - List all files in `experience/` and read their frontmatter (company, slug, start, end)
 - List all files in `projects/` and read their frontmatter (name, slug)
-- Note: if no profile exists, remind the user to run `/talent-brain:init` first and stop
+- Note: if no profile exists, remind the user to run `/talent-brain:tb-init` first and stop
 
 ## Phase 3 — Plan actions
 
@@ -157,26 +157,23 @@ ingested_sources:
 
 ## Contributions
 
-[extracted descriptions, formatted as prose or bullets, or <!-- not yet captured -->]
+[For each named initiative extracted from the source:]
 
-## Outcomes
-
-<!-- not yet captured -->
-
-## Decisions & Tradeoffs
-
-<!-- not yet captured -->
-
-## Tools & Methods
-
-[extracted technologies as a list, or <!-- not yet captured -->]
-
-## Team & Scope
-
-<!-- not yet captured -->
+### [Initiative name or descriptive label]
+- what: [activity phrase — what was done or built, without technology names]
+- stack: [technologies, frameworks, tools mentioned for this initiative]
+- impact: [if the source states an outcome or metric, capture it; otherwise <!-- not yet captured -->]
 ```
 
-**Important:** Do not invent content for Outcomes, Decisions & Tradeoffs, or Team & Scope — these require the person's own recollection, not resume text. Mark them `<!-- not yet captured -->`.
+**Extraction rules for Contributions:**
+- Each `**Name** – description` bullet in the source becomes a `### Name` sub-section
+- `what`: the activity phrase, stripping technology names (those go in `stack`)
+- `stack`: combine tech names from the bullet with any Tools & Methods list in the source
+- `impact`: only write if the source explicitly states a result or metric; never infer or estimate
+- For bullets without a bold name: create a short descriptive label from the activity
+- If the role has no distinct initiatives (e.g., a short early-career role): use `<!-- not yet captured -->` and let `/excavate` fill in structure
+
+**Important:** Do not write Decisions & Tradeoffs to experience files — that section is deferred to a future `behavioural/` extension.
 
 ### CREATE: new project file
 
@@ -211,16 +208,25 @@ When multiple sources both contain content for the same role:
 
 If skills were extracted from any source:
 1. Read the existing `skills.md`
-2. Identify skills not yet present in any form
-3. Append a section for ingested skills that need review:
+2. Identify skills not yet present in any form (check all sections)
+3. For each new skill, determine which section it belongs to based on the skills.md structure (Languages, Big Data, Streaming & Messaging, Cloud Platforms, DevOps, etc.)
+4. Add new skills into the appropriate existing section rather than a catch-all "Ingested" pile. Format each entry with:
+   - Depth signal inferred from the source (expert if used heavily in multiple roles, proficient if used in a project, familiar if listed but not featured)
+   - Recency signal inferred from the role dates (active if within last 2 years, recent if within 5 years, historical if older)
+   - 1–2 sentences on what they did with it, drawn directly from the source
+   - `_Used at:_` links to the experience files where it appears
+   - `_Reference:_` link to the official/canonical page for the technology (use well-known URLs only — apache.org, cloud.google.com, etc.; omit if unsure)
+
+If `skills.md` has no sections yet (stubs only), append a `## Ingested (needs review)` section grouped by domain with the same format, so the owner can rename and reorganize:
 
 ```markdown
-## Ingested (needs review)
-<!-- Skills extracted from resume sources. Add depth/recency signals and move to the right domain section. Remove this section when done. -->
+## Ingested — [Domain] (needs review)
+<!-- Move these into the right section once you're happy with the depth/recency signals. -->
 
-**[Skill]** — ? — ?
-
-**[Skill]** — ? — ?
+**[Skill]** — expert|proficient|familiar — active|recent|historical
+[1–2 sentences from source]
+_Used at:_ [Company](experience/slug.md)
+_Reference:_ [Name](url)
 ```
 
 Do NOT modify any existing skill entries. Do NOT add skills already present elsewhere in the file.

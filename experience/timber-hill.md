@@ -1,7 +1,7 @@
 ---
 company: "Timber Hill"
 slug: "timber-hill"
-title: "Programmer/Analyst"
+title: "Programmer/Analyst / Tech Lead"
 start: "1991-09"
 end: "1993-03"
 location: ""
@@ -16,7 +16,7 @@ ingested_sources:
     note: "structured interview"
 ---
 
-# Timber Hill — Programmer/Analyst
+# Timber Hill — Programmer/Analyst / Tech Lead
 
 ## Context
 

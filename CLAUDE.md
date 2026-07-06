@@ -1,6 +1,6 @@
 # Talent Brain Career Profile
 
-This is a Talent Brain career profile, built and maintained using the [Talent Brain plugin](https://github.com/jeromebanks/talent-brain). The plugin is configured in `.claude/settings.json` and loads automatically when this folder is opened in Claude Code. Skills are also copied into `.claude/skills/` and work without any plugin install.
+This is a Talent Brain career profile, built and maintained using the [Talent Brain plugin](https://github.com/jeromebanks/talent-brain). Skills are bundled in `.claude/skills/` and load automatically when this folder is opened in Claude Code — no plugin install needed. `.claude/settings.json` also references the plugin as a fallback for anyone who has it installed globally via the marketplace.
 
 ## Profile structure
 

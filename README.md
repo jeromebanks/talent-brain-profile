@@ -19,7 +19,7 @@ Or just ask questions directly — Claude will navigate the profile and answer:
 - "Has he led or mentored engineers?"
 - "How does his background compare to what we need for [describe the problem]?"
 
-No setup required. The plugin loads automatically.
+No setup required. The skills are bundled in this folder and load automatically.
 
 ---
 

@@ -1,12 +1,12 @@
 ---
-schema_version: "1.0"
+schema_version: "1.1"
 name: "Jerome Banks"
 current_title: "Senior Data Platform Engineer"
 location: ""
 emails:
   - "jerome.banks@gmail.com"
   - "jerome_banks@yahoo.com"
-linkedin: "https://www.linkedin.com/pub/jerome-banks/1/77/832"
+linkedin: "https://www.linkedin.com/in/jerome-banks-8320771"
 github: "http://github.com/jeromebanks"
 websites:
   - url: "https://brickhouseconfessions.wordpress.com"
@@ -142,3 +142,7 @@ Bachelor of Science, Engineering & Applied Science — emphasis in Computer Scie
 <!-- not yet captured -->
 
 → [Full taxonomy](skills.md)
+
+## Extensions
+
+→ [Publications](extensions/publications.md) — acknowledged contributor on two published research papers (LASTA, KDD '14; Klout Topics, K-CAP '17)

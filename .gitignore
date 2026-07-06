@@ -1,0 +1,14 @@
+# Source materials — resumes, LinkedIn exports; contain contact info, not for a public repo
+source/
+
+# Personal planning/session-state docs — not part of the public profile
+_dev/
+
+# Serena MCP — local index, not part of the repo
+.serena/
+
+# Claude Code — local session settings (permissions, personal config)
+.claude/settings.local.json
+
+# macOS
+.DS_Store

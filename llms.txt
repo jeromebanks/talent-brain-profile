@@ -1,6 +1,6 @@
 # Jerome Banks — Career Profile
 
-> Senior Data Platform Engineer with deep expertise in Hadoop/Spark ecosystems, cloud data infrastructure, and open-source contributions. Apache Committer and founder of Brickhouse (Hive UDFs). Update this as your profile develops.
+> Senior Data Platform Engineer with deep expertise in Hadoop/Spark ecosystems, cloud data infrastructure, and open-source contributions. Apache Committer and founder of Brickhouse (Hive UDFs).
 
 ## Core Files
 - [RESUME.md](RESUME.md): Full career index — experience, projects, skills summary, education
@@ -28,9 +28,8 @@
 - [experience/axiologic.md](experience/axiologic.md): Axiologic Corporation (contractor) — NatWest, Deutsche-Morgan Grenfell, Citibank (1995-02–1997-10)
 - [experience/lehman.md](experience/lehman.md): Lehman Brothers — Senior Programmer Analyst (1993-09–1995-02)
 - [experience/ofi.md](experience/ofi.md): OFI Corp. — Software Engineer (1993-02–1993-09)
-- [experience/timber-hill.md](experience/timber-hill.md): Timber Hill — Programmer/Analyst (1991-09–1993-03)
+- [experience/timber-hill.md](experience/timber-hill.md): Timber Hill — Programmer/Analyst / Tech Lead (1991-09–1993-03)
 - [experience/att.md](experience/att.md): AT&T — Consultant (1989-08–1991-10)
-- [experience/prior-experience.md](experience/prior-experience.md): Various companies — Software Engineer / Contractor (pre-2008, stub index)
 
 ## Projects
 
@@ -38,3 +37,4 @@
 - [projects/satisfaction.md](projects/satisfaction.md): Satisfaction — next-generation Hadoop batch scheduler (github.com/ifwe/satisfaction)
 
 ## Extensions
+- [extensions/publications.md](extensions/publications.md): Acknowledged contributor on two published research papers — LASTA (KDD '14), Klout Topics (K-CAP '17)

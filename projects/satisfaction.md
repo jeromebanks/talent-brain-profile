@@ -1,9 +1,11 @@
 ---
 name: "Satisfaction"
 slug: "satisfaction"
+type: "open-source"
+status: "archived"
 company: "if(we) (open-sourced)"
 start: "2013-01"
-end: null
+end: "2015-07"
 url: "http://github.com/ifwe/satisfaction"
 ingested_sources:
   - file: "Resume02-2025 (Google Drive)"
