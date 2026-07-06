@@ -1,5 +1,5 @@
 ---
-updated: "2026-06-18"
+updated: "2026-07-06"
 ---
 
 # Skills & Capabilities
@@ -30,7 +30,11 @@ _Used at:_ [Klout](experience/klout.md), [Jumpshot](experience/jumpshot.md), [Ta
 
 **Open Source Infrastructure Libraries** — expert — recent  
 Founded and maintained widely-used open-source projects: Brickhouse (Hive UDFs, forked/cloned by hundreds of data teams), Satisfaction (Hadoop scheduler). Apache Committer on Hivemall.  
-_Projects:_ [Brickhouse](../projects/brickhouse.md), [Satisfaction](../projects/satisfaction.md)
+_Projects:_ [Brickhouse](projects/brickhouse.md), [Satisfaction](projects/satisfaction.md)
+
+**Agentic Engineering with Claude Code, MCP, and LangGraph** — expert — active  
+Applies the same infrastructure-builder pattern to AI tooling: designed and shipped multiple MCP servers for pipeline debugging and domain-specific scientific APIs, revived a non-functional LangGraph agent integration, and built a suite of internal Claude Code skills to raise engineering rigor across a team new to agentic workflows. Used AI-assisted generation (Claude Code, Codex, Gemini) to migrate a legacy scientific workflow to Nextflow in ~4–5 days.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)
 
 ---
 
@@ -234,12 +238,57 @@ Extended Nutch for large-scale URL crawling at Demandbase; built crawl metrics f
 _Used at:_ [Demandbase](experience/demandbase.md)  
 _Reference:_ [nutch.apache.org](https://nutch.apache.org)
 
+**Nextflow / Nextflow DSL2** — proficient — active  
+Primary workflow orchestration tool for current bioinformatics/imaging pipelines. Migrated an HRD-determination workflow from legacy cHPC execution to Nextflow in ~4–5 days (nf-forge); migrated the phenomics image pipeline from Vertex AI/HPC to Nextflow DSL2 on GCP Batch; designing a distributed Cellpose3D 3D segmentation pipeline.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
+_Reference:_ [nextflow.io](https://www.nextflow.io)
+
+**Seqera Tower** — proficient — active  
+Orchestration, observability, and run management for Nextflow pipelines running on GCP Batch.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
+_Reference:_ [seqera.io](https://seqera.io)
+
+**GCP Batch** — proficient — active  
+Compute backend for Nextflow pipelines. Migrated the phenomics pipeline off Vertex AI onto GCP Batch, driving GPU utilization from ~1.75% to ~100% and cutting single-barcode runtime from ~2h11m to ~43m32s.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
+_Reference:_ [cloud.google.com/batch](https://cloud.google.com/batch)
+
+---
+
+## AI/Agentic Engineering
+
+**Model Context Protocol (MCP) / FastMCP** — expert — active  
+Built and iterated multiple MCP servers in production use: a ~12-tool FastMCP server exposing GCP Batch/Cloud Run/Workflows/GCS for pipeline debugging (with unit tests, an eval framework, and an agent-driven tool-improvement feedback loop), and a domain-specific Nextflow pipeline API layer that evolved from one FastMCP tool per endpoint (context bloat) to a single generic tool backed by a searchable SKILL-file registry.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
+_Reference:_ [modelcontextprotocol.io](https://modelcontextprotocol.io)
+
+**LangChain / LangGraph** — proficient — active  
+Took over and made functional a non-working LangChain/LangGraph proof-of-concept for triggering Nextflow pipeline runs via chat; wired in the GCP and pipeline-API MCP tools and SKILL-file reading so the cloud agent's behavior stayed consistent with local Claude Code usage.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
+_Reference:_ [langchain-ai.github.io/langgraph](https://langchain-ai.github.io/langgraph/)
+
+**Claude Code Skills (agentic engineering)** — expert — active  
+Core building block of nf-forge's AI-assisted pipeline generation. Built internal skills for PR review/explanation with reviewer comprehension quizzes, JIRA ticket authoring/grooming, skill-documentation generation (with state-transition graphs of agentic workflows), and a Gemini adversarial-review loop (suggest → fix → re-review until approved or a turn limit is hit).  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)
+
+**Gemini API / Gemini LLMs** — proficient — recent  
+Used as a generation and investigation accelerator in nf-forge alongside Claude Code and Codex; built a Gemini adversarial-review skill that critiques PRs and architecture plans and loops with Claude until approval.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)
+
+**Codex** — familiar — recent  
+Used alongside Claude Code Skills and Gemini as a generation/investigation accelerator in nf-forge's AI-assisted Nextflow pipeline migration work.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)
+
+**Personal knowledge graphs (Obsidian + LightRAG)** — familiar — recent  
+Built a personal tool to track GSK's sprawling, siloed AI Scientist/LIAL initiative — used MCP to spider Confluence and GitHub into Obsidian, with LightRAG layered on top to unify related concepts described independently across disconnected teams' documents.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)
+
 ---
 
 ## ML/AI Platform
 
 **Vertex AI** — familiar — active  
-Used for ML workloads at Onyx GSK (GCP's primary ML platform).  
+Used for ML workloads at Onyx GSK (GCP's primary ML platform); the phenomics pipeline's original implementation before migration to Nextflow/GCP Batch.  
 _Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
 _Reference:_ [cloud.google.com/vertex-ai](https://cloud.google.com/vertex-ai)
 
@@ -257,6 +306,14 @@ _Reference:_ [mlflow.org](https://mlflow.org)
 Used for Named Entity Recognition and keyword extraction in the Windmill Document Parser Dataflow pipeline at Demandbase.  
 _Used at:_ [Demandbase](experience/demandbase.md)  
 _Reference:_ [stanfordnlp.github.io/CoreNLP](https://stanfordnlp.github.io/CoreNLP/)
+
+**GPU Computing (PyTorch, CUDA, A100/T4)** — proficient — recent  
+Redesigned GPU featurization from memory-heavy bulk loading to a streaming PyTorch IterableDataset with controlled batching, driving GPU utilization on the phenomics pipeline from ~1.75% to ~100% and cutting single-barcode runtime ~3×.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)
+
+**Distributed Scientific Imaging (Cellpose-SAM, Zarr)** — proficient — recent  
+Designed a distributed 3D cell segmentation pipeline for multi-hundred-GB microscopy volumes: streamed TIFF-to-Zarr conversion, spatial block partitioning with halo overlap, GPU-based Cellpose-SAM inference. Identified and fixed a concurrent-write merge-correctness bug in the distributed Zarr merge stage.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)
 
 ---
 
@@ -285,6 +342,11 @@ _Reference:_ [prometheus.io](https://prometheus.io) · [grafana.com](https://gra
 **Git pre-commit hooks** — proficient — active  
 Built WFLinter as a git pre-commit hook for validating GCP Workflow YAML files before CI/CD submission at Onyx GSK.  
 _Used at:_ [Onyx GSK](experience/onyx-gsk.md)
+
+**Test Engineering (pytest, WireMock, contract/e2e harnesses)** — proficient — active  
+Built a pytest integration suite per GCP Workflow, WireMock-based error simulation for Google and internal service failures, and an end-to-end test framework with canned inputs and expected pass/fail outcomes — took a team from zero testing to full coverage across ~12+ workflows. Also built docker-compose integration tests running real Oracle/Postgres/MySQL/SQLServer engines for JDBC ingestion.  
+_Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
+_Reference:_ [pytest.org](https://pytest.org) · [wiremock.org](https://wiremock.org)
 
 ---
 
