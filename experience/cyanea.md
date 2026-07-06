@@ -35,7 +35,7 @@ Cyanea Systems was an Oakland-based J2EE application performance management (APM
 ### Application Traps
 - what: application-level event trap subsystem using event bus architecture — email notifications on threshold events, JSP/Servlet management UI, and SNMP adaptor for integration with enterprise monitoring tools
 - stack: Java, JSP, Servlets, SNMP
-- impact: enabled integration with enterprise monitoring infrastructure (HP OpenView, Tivoli, etc.) via standard SNMP; also introduced an MVC architecture to Cyanea's engineering org in the process of building the management UI
+- impact: enabled integration with enterprise monitoring infrastructure (HP OpenView, Tivoli, etc.) via standard SNMP; also introduced an MVC architecture to Cyanea's engineering org in the process of building the management UI; this monitoring work was also filed as a patent (co-invented with the core Cyanea team, later assigned to IBM upon acquisition — four granted US patents; see [extensions/patents.md](../extensions/patents.md))
 
 ### Performance Improvements
 - what: performance and scalability improvements to the Publish Server backend via reduced thread contention and synchronization

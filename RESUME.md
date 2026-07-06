@@ -146,3 +146,4 @@ Bachelor of Science, Engineering & Applied Science — emphasis in Computer Scie
 ## Extensions
 
 → [Publications](extensions/publications.md) — acknowledged contributor on two published research papers (LASTA, KDD '14; Klout Topics, K-CAP '17)
+→ [Patents](extensions/patents.md) — co-inventor on four granted US patents from Cyanea Systems/IBM application performance monitoring work, plus a Klout patent filing (unissued)

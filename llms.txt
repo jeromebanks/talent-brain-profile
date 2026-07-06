@@ -38,3 +38,4 @@
 
 ## Extensions
 - [extensions/publications.md](extensions/publications.md): Acknowledged contributor on two published research papers — LASTA (KDD '14), Klout Topics (K-CAP '17)
+- [extensions/patents.md](extensions/patents.md): Co-inventor on four granted US patents (application performance monitoring, Cyanea Systems/IBM) and one unissued patent filing (Klout, Inc.)

@@ -43,7 +43,7 @@ Technical leadership in Hadoop, Hive, and Big Data for a social influence scorin
 ### Topic Thunder — Topic Assignment
 - what: investigation of social media features for topic relevance, leading to a Bayesian classification approach; pipelines for topic assignment, topical leaderboards, and topical scores
 - stack: Hadoop, MapReduce, Hive, HBase, Brickhouse UDFs
-- impact: shipped customer-facing topical influence scores and leaderboards at scale — 10,000+ topics across hundreds of millions of users, processed daily; work contributed to two published research papers (LASTA, 2014; Klout Topics, 2017) with Jerome acknowledged as contributor
+- impact: shipped customer-facing topical influence scores and leaderboards at scale — 10,000+ topics across hundreds of millions of users, processed daily; work contributed to two published research papers (LASTA, 2014; Klout Topics, 2017) with Jerome acknowledged as contributor, and to a patent filing co-invented with the platform team ("Dynamic Information Streams in a Social Network Platform," 2013 — see [extensions/patents.md](../extensions/patents.md))
 
 ### Brickhouse — Useful Hive UDFs
 - what: open-sourced common internal Hive UDFs as github.com/klout/brickhouse, with community evangelism, tech meetup presentations, and a public blog on Hadoop/Hive patterns
