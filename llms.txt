@@ -33,6 +33,7 @@
 
 ## Projects
 
+- [projects/talent-brain.md](projects/talent-brain.md): Talent Brain — agentic career-profile system, twelve Claude Code skills over a markdown knowledge graph (github.com/jeromebanks/talent-brain)
 - [projects/brickhouse.md](projects/brickhouse.md): Brickhouse — open-source Hive UDF library (github.com/klout/brickhouse)
 - [projects/satisfaction.md](projects/satisfaction.md): Satisfaction — next-generation Hadoop batch scheduler (github.com/ifwe/satisfaction)
 

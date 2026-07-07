@@ -126,6 +126,10 @@ First job out of Caltech, employed by Zyga (a small boutique consulting firm foc
 
 ## Selected Projects
 
+### Talent Brain
+An agentic system for career profiles: a markdown knowledge graph plus twelve Claude Code skills that ingest resumes, excavate undocumented depth, and generate targeted resumes, fit assessments, and recruiter-facing interactive showcases. Open-sourced, MIT-licensed, and the tool that built this profile.
+→ [Project detail](projects/talent-brain.md)
+
 ### Brickhouse
 A collection of useful Hive UDFs, widely adopted across the data engineering community. Founded at Klout, maintained through if(we). Includes cardinality estimation (KMV sketches), HBase I/O, user sessionization, and demographic aggregation utilities.
 → [Project detail](projects/brickhouse.md)
