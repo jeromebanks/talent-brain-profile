@@ -16,7 +16,7 @@ For over 15 years, Jerome has been the engineer companies bring in when a large-
 Open this folder in [Claude Code](https://claude.ai/code) and run:
 
 ```
-/talent-brain:showcase
+/showcase
 ```
 
 Or just ask questions directly — Claude will navigate the profile and answer:
@@ -34,14 +34,14 @@ No setup required. The skills are bundled in this folder and load automatically.
 
 | What you want to do | Command |
 |---|---|
-| Add a new resume or job | `/talent-brain:ingest [file]` |
-| Deepen a role with a structured interview | `/talent-brain:excavate` |
-| Update career goals and preferences | `/talent-brain:intent` |
-| Generate a resume for a job posting | `/talent-brain:generate [jd]` |
-| Check fit against a role | `/talent-brain:fit [jd]` |
-| Find gaps for a target role | `/talent-brain:gap [jd]` |
-| Draft a cover letter | `/talent-brain:cover-letter [jd]` |
-| Publish updates to the repo | `/talent-brain:publish` |
+| Add a new resume or job | `/ingest [file]` |
+| Deepen a role with a structured interview | `/excavate` |
+| Update career goals and preferences | `/intent` |
+| Generate a resume for a job posting | `/generate [jd]` |
+| Check fit against a role | `/fit [jd]` |
+| Find gaps for a target role | `/gap [jd]` |
+| Draft a cover letter | `/cover-letter [jd]` |
+| Publish updates to the repo | `/publish` |
 
 ---
 
