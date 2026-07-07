@@ -4,8 +4,8 @@ name: "Jerome Banks"
 current_title: "Senior Data Platform Engineer"
 location: ""
 emails:
-  - "jerome.banks@gmail.com"
   - "jerome_banks@yahoo.com"
+  - "jerome.banks@gmail.com"
 linkedin: "https://www.linkedin.com/in/jerome-banks-8320771"
 github: "http://github.com/jeromebanks"
 websites:
@@ -24,17 +24,19 @@ _Senior Data Platform Engineer with deep roots in Hadoop/Spark ecosystems and a 
 
 ## Summary
 
-<!-- not yet captured -->
+Staff-level data platform engineer with over 15 years building large-scale distributed data infrastructure — from early Hadoop/MapReduce through Apache Spark, cloud-native streaming, and now AI-assisted pipeline engineering. Founded and open-sourced Brickhouse and Satisfaction, infrastructure libraries still used across the data engineering community, and has repeatedly been brought in as the senior technical IC to stand up big data capability from scratch, across ad tech, marketing analytics, and most recently pharma. At GSK, migrated genomics and cell-imaging pipelines to Nextflow/GCP Batch and built AI-assisted tooling — including an approach for generating Nextflow pipelines from legacy scientific code and MCP servers for pipeline operations — to modernize scientific workflow delivery. Currently deepening AI/ML platform expertise while applying distributed-systems fundamentals to large-scale scientific and genomic data.
 
 ## Interests & Intent
 
-<!-- not yet captured -->
+Targeting Staff+ hands-on IC roles at the intersection of AI/ML and large-scale data engineering — ideally biotech, but any domain involving AI and big data. High autonomy, small collaborative team, SF Bay Area (hybrid).
 
 → [Full detail](intent.md)
 
 ## Core Competencies
 
-<!-- not yet captured -->
+Big Data & Distributed Systems Architecture · Data Pipeline Engineering (Batch & Streaming) · Multidimensional Aggregation & Analytics Engineering · Open Source Infrastructure Libraries · Agentic Engineering (Claude Code, MCP, LangGraph) · Mentoring & Technical Evangelism
+
+→ [Full taxonomy with depth/recency signals](skills.md)
 
 ## Experience
 
@@ -139,7 +141,7 @@ Bachelor of Science, Engineering & Applied Science — emphasis in Computer Scie
 
 ## Skills
 
-<!-- not yet captured -->
+Big Data & Distributed Systems (Spark, Hadoop, Beam/Dataflow, Kafka) · Cloud (GCP, AWS) · AI/Agentic Engineering (MCP, LangGraph, Claude Code Skills) · Scala/Python/Java · Orchestration & DevOps (Airflow, Nextflow, Kubernetes, Terraform)
 
 → [Full taxonomy](skills.md)
 

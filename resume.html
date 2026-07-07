@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jerome Banks - Resume</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; font-size: 9.5pt; line-height: 1.15; color: #000; max-width: 7.3in; margin: 0 auto; }
+  h1 { font-size: 16pt; margin-bottom: 0.1em; }
+  h2 { font-size: 11.5pt; border-bottom: 1px solid #000; margin-top: 0.5em; margin-bottom: 0.2em; }
+  h3 { font-size: 10pt; margin-bottom: 0.05em; margin-top: 0.35em; }
+  p { margin: 0.15em 0; }
+  ul { margin-top: 0.1em; margin-bottom: 0.3em; padding-left: 1.1em; }
+  li { margin-bottom: 0.05em; }
+  .role-meta { font-style: italic; margin-bottom: 0.05em; }
+  .earlier-entry { margin-bottom: 0.2em; }
+  @page { margin: 0.45in; }
+</style>
+</head>
+<body>
+
+<h1>Jerome Banks</h1>
+<p>Oakland, CA | jerome_banks@yahoo.com | linkedin.com/in/jerome-banks-8320771 | github.com/jeromebanks</p>
+
+<h2>Summary</h2>
+<p>Staff-level data platform engineer with over 15 years building large-scale distributed data infrastructure — from early Hadoop/MapReduce through Apache Spark, cloud-native streaming, and now AI-assisted pipeline engineering. Founded and open-sourced Brickhouse and Satisfaction, infrastructure libraries still used across the data engineering community, and has repeatedly been brought in as the senior technical IC to stand up big data capability from scratch, across ad tech, marketing analytics, and most recently pharma. At GSK, migrated genomics and cell-imaging pipelines to Nextflow/GCP Batch and built AI-assisted tooling — including an approach for generating Nextflow pipelines from legacy scientific code and MCP servers for pipeline operations — to modernize scientific workflow delivery. Currently deepening AI/ML platform expertise while applying distributed-systems fundamentals to large-scale scientific and genomic data.</p>
+
+<h2>Skills</h2>
+<p><strong>Big Data &amp; Distributed Systems:</strong> Apache Spark, Hadoop/MapReduce/HDFS, Apache Beam/Dataflow, Apache Hive, Delta Lake, Databricks, Apache Kafka</p>
+<p><strong>Cloud Platforms:</strong> Google Cloud Platform (BigQuery, Dataflow, Dataproc, Batch, Pub/Sub), AWS (EMR, S3, Kinesis, DynamoDB, Lambda)</p>
+<p><strong>AI/Agentic Engineering:</strong> Model Context Protocol (MCP) / FastMCP, LangChain/LangGraph, Claude Code Skills, AI-assisted Nextflow pipeline generation, Gemini API, GPU computing (PyTorch, CUDA)</p>
+<p><strong>Languages:</strong> Scala, Python, Java, Ruby, C++</p>
+<p><strong>Orchestration &amp; DevOps:</strong> Apache Airflow, Nextflow/DSL2, Kubernetes/Helm, Docker, Terraform, Prometheus/Grafana, pytest/WireMock</p>
+<p><strong>Open Source:</strong> Brickhouse (founder), Satisfaction (founder), Apache Hivemall (committer)</p>
+
+<h2>Experience</h2>
+
+<h3>Onyx GSK — Senior Data Platform Engineer</h3>
+<p class="role-meta">07/2023 – 06/2026</p>
+<ul>
+<li>Migrated a phenomics image-processing pipeline from Vertex AI to Nextflow DSL2 on GCP Batch, driving GPU utilization from ~1.75% to ~100% and cutting single-barcode runtime from ~2h11m to ~43m32s.</li>
+<li>Built nf-forge, an AI-assisted approach for generating Nextflow pipelines from legacy scientific code, first proven by migrating an HRD-determination workflow to production in ~4–5 days.</li>
+<li>Built a ~12-tool FastMCP server exposing GCP Batch/Cloud Run/Workflows/GCS for pipeline debugging, adopted by the Data Platform Engineering team.</li>
+<li>Ingested 150TB+ (100B+ files) of Cell Painting imaging data from the Broad Institute's JUMP-CP dataset via GCP Dataflow.</li>
+<li>Took GCP Workflow development from zero test coverage to full pytest/WireMock/CI-CD coverage across 12+ workflows.</li>
+</ul>
+
+<h3>Apixio — Staff Software Engineer, Data Platform</h3>
+<p class="role-meta">08/2022 – 07/2023</p>
+<ul>
+<li>Eliminated chronic daily pipeline failures in a healthcare document-processing pipeline by rearchitecting Delta Lake telemetry writes through Kafka.</li>
+<li>Built a Spark zombie-process detector that caught silent stalls before they missed time-critical, revenue-impacting deadlines.</li>
+<li>Introduced Prometheus/Grafana observability where none existed.</li>
+</ul>
+
+<h3>Tatari — Staff Data Platform Engineer</h3>
+<p class="role-meta">02/2020 – 07/2022</p>
+<ul>
+<li>Brought in as the most senior IC to introduce Big Data to a TV ad-tech company with no Spark experience or budget for managed services; stood up production Spark on Kubernetes (AWS EKS) as a zero-cost on-ramp.</li>
+<li>Built a multi-dimensional OLAP-style Spark aggregation tool for combined linear and streaming TV campaign metrics; shipped a Scala Spark UDF/UDAF library for team adoption.</li>
+</ul>
+
+<h3>Demandbase — Principal Big Data Engineer</h3>
+<p class="role-meta">09/2018 – 02/2020</p>
+<ul>
+<li>Owned the core data pipelines behind Demandbase's intent-signal product from conception through production support.</li>
+<li>Re-architected a multi-dimensional web-engagement aggregation pipeline (Cubism pattern), adding geo while making it substantially faster and cheaper.</li>
+<li>Reduced BigQuery slot usage by roughly an order of magnitude on legacy pipelines that had been failing SLAs.</li>
+</ul>
+
+<h3>Jumpshot/Avast — Senior Software Engineer</h3>
+<p class="role-meta">12/2016 – 08/2018</p>
+<ul>
+<li>De facto technical lead for a data processing team working with an opt-in clickstream panel of ~100M devices and 435M monthly active users.</li>
+<li>Built Cubism, a multidimensional Spark aggregation library adopted by both the San Francisco and Czech Republic teams; basis for the FunnelCube e-commerce insights product.</li>
+<li>Extended Cubism to Spark Streaming with Kafka-based data-quality monitoring, catching deployment misconfigurations within minutes.</li>
+</ul>
+
+<h3>StitchFix — Data Platform Engineer, Algorithms &amp; Analytics</h3>
+<p class="role-meta">08/2015 – 10/2016</p>
+<ul>
+<li>Built production web-event ingestion (HTTP/AMQP into AWS S3 via Kinesis) using Akka Reactive Streams.</li>
+<li>Built a Spark DataSource connector for distributed read/write of ML model weights in DynamoDB, used in production by the algorithms team.</li>
+</ul>
+
+<h3>Tagged.com / if(we) — Senior Software Engineer, Analytics Infrastructure</h3>
+<p class="role-meta">03/2014 – 07/2015</p>
+<ul>
+<li>Completed and shipped Satisfaction (Hadoop batch scheduler) to production, running event ingestion for a 300M-member platform and demographic aggregates across millions of segments.</li>
+</ul>
+
+<h3>Klout — Senior Software Engineer</h3>
+<p class="role-meta">09/2011 – 02/2014</p>
+<ul>
+<li>Built the Hadoop/Hive pipelines behind Klout's topical influence scores — 10,000+ topics scored daily across hundreds of millions of users — contributing to two published papers and a co-invented patent.</li>
+<li>Founded and open-sourced Brickhouse, a Hive UDF library still widely used across the data engineering industry.</li>
+</ul>
+
+<h3>Quantcast — Senior Software Engineer</h3>
+<p class="role-meta">09/2008 – 09/2011</p>
+<ul>
+<li>Developed and maintained the Publisher daily reach job — Quantcast's flagship measurement product, which ran in production for over a decade.</li>
+</ul>
+
+<p><em>Additional experience prior to 2008 (enterprise Java/J2EE, application performance monitoring, and financial trading systems) available upon request.</em></p>
+
+<h2>Selected Projects</h2>
+<p><strong>Brickhouse:</strong> Open-source Hive UDF library founded at Klout and maintained through if(we) — cardinality estimation (KMV sketches), HBase I/O, sessionization, demographic aggregation. Widely forked and cloned across the data engineering community.</p>
+<p><strong>Satisfaction:</strong> Dependency-based Hadoop batch scheduler in Scala (DSL, Play! UI, Akka engine), taken from prototype at Klout to production at if(we), replacing Oozie/Jenkins; open-sourced.</p>
+
+<h2>Education &amp; Additional</h2>
+<p>California Institute of Technology — B.S., Engineering &amp; Applied Science (Computer Science emphasis). Acknowledged contributor on two published research papers (LASTA, KDD '14; Klout Topics, K-CAP '17); co-inventor on four granted US patents (Cyanea Systems/IBM APM work) plus a Klout patent filing.</p>
+
+</body>
+</html>

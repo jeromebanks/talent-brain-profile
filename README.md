@@ -1,6 +1,13 @@
 # Jerome Banks
 
-Senior Data Platform Engineer. 15+ years building Big Data infrastructure across ad tech, social media, healthcare, and pharma. Founded [Brickhouse](http://github.com/klout/brickhouse), a widely-used open-source Hive UDF library. Apache Committer. BS Engineering & Applied Science, Caltech.
+For over 15 years, Jerome has been the engineer companies bring in when a large-scale data problem needs to become production infrastructure — from Hadoop-era batch pipelines at web-audience-measurement scale, through Spark and cloud-native streaming, to today's AI-assisted scientific workflow engineering at GSK. He's repeatedly stood up big data capability from nothing (Tatari, Demandbase, Jumpshot/Avast), and his open-source infrastructure — Brickhouse and Satisfaction, both founded over a decade ago — is still in active use across the data engineering community.
+
+**Strongest signals:**
+- Founded [Brickhouse](http://github.com/klout/brickhouse), a Hive UDF library forked and cloned by hundreds of data teams industry-wide, still active more than a decade later
+- At GSK, migrated a phenomics image-processing pipeline from Vertex AI to Nextflow/GCP Batch, driving GPU utilization from ~1.75% to ~100% and cutting single-barcode runtime roughly 3x (~2h11m → ~43m32s)
+- Built nf-forge, an AI-assisted approach for generating Nextflow pipelines from legacy scientific code — first proven by migrating an HRD-determination workflow to production in ~4–5 days
+- Repeatedly brought in as the senior technical IC to build big data capability from scratch with no existing team or budget — most notably standing up production Spark on Kubernetes at Tatari with zero managed-service spend
+- Built the pipelines behind Klout's topical influence scoring at 750M-user, 45B-daily-interaction scale, contributing to two published research papers and a co-invented patent
 
 ---
 
@@ -14,7 +21,7 @@ Open this folder in [Claude Code](https://claude.ai/code) and run:
 
 Or just ask questions directly — Claude will navigate the profile and answer:
 
-- "What has Jerome built that's most relevant to a Staff Engineer role at a data-heavy company?"
+- "What has Jerome built that's most relevant to a Staff+ engineer role at a data-heavy company?"
 - "Walk me through his most complex infrastructure project."
 - "Has he led or mentored engineers?"
 - "How does his background compare to what we need for [describe the problem]?"
