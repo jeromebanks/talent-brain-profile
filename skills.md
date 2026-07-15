@@ -29,7 +29,7 @@ Specialist in generating aggregates across high-cardinality, multi-dimensional d
 _Used at:_ [Klout](experience/klout.md), [Jumpshot](experience/jumpshot.md), [Tatari](experience/tatari.md)
 
 **Open Source Infrastructure Libraries** — expert — recent  
-Founded and maintained widely-used open-source projects: Brickhouse (Hive UDFs, forked/cloned by hundreds of data teams), Satisfaction (Hadoop scheduler). Apache Committer on Hivemall.  
+Founded and maintained widely-used open-source projects: Brickhouse (Hive UDFs — 573 GitHub forks, 33 external contributors, published to Maven Central), Satisfaction (Hadoop scheduler). Apache Committer on Hivemall.  
 _Projects:_ [Brickhouse](projects/brickhouse.md), [Satisfaction](projects/satisfaction.md)
 
 **Agentic Engineering with Claude Code, MCP, and LangGraph** — expert — active  
@@ -401,8 +401,8 @@ _Reference:_ [greenplum.org](https://greenplum.org)
 ## Open Source
 
 **Brickhouse** — founder & primary maintainer  
-Collection of Hive UDFs widely used in the data engineering community. Forked and cloned by hundreds of teams. Covers: KMV sketches (cardinality estimation), HBase I/O, user sessionization, demographic aggregation.  
-_Reference:_ [github.com/klout/brickhouse](http://github.com/klout/brickhouse)
+Collection of Hive UDFs widely used in the data engineering community — 573 GitHub forks, 33 external contributors. Covers: KMV sketches (cardinality estimation), HBase I/O, user sessionization, demographic aggregation.  
+_Reference:_ [github.com/jeromebanks/brickhouse](https://github.com/jeromebanks/brickhouse)
 
 **Satisfaction** — founder  
 Next-generation Hadoop batch scheduler with Scala DSL, Akka dependency engine, and Play! UI. Replaced Oozie/Jenkins-based workflows at Klout and if(we).  

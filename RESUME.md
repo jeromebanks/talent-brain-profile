@@ -131,7 +131,7 @@ An agentic system for career profiles: a markdown knowledge graph plus twelve Cl
 → [Project detail](projects/talent-brain.md)
 
 ### Brickhouse
-A collection of useful Hive UDFs, widely adopted across the data engineering community. Founded at Klout, maintained through if(we). Includes cardinality estimation (KMV sketches), HBase I/O, user sessionization, and demographic aggregation utilities.
+A Hive UDF library founded at Klout in 2012 — 573 GitHub forks, 33 external contributors, published to Maven Central, evangelized through a four-year blog and a talk hosted on the Apache Software Foundation's own wiki. Its KMV sketch-based cardinality estimator resolved OOM failures in the pipeline computing the Klout Score for high-follower "whale" accounts and became the org-wide reach-estimation solution; the same ideas (KMV sketches, XUnit-style multidimensional aggregation) were later reborn as Cubism, the Spark-based library built at Jumpshot and Demandbase.
 → [Project detail](projects/brickhouse.md)
 
 ### Satisfaction
