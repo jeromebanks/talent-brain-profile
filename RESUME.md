@@ -131,7 +131,7 @@ An agentic system for career profiles: a markdown knowledge graph plus twelve Cl
 → [Project detail](projects/talent-brain.md)
 
 ### Brickhouse
-A Hive UDF library founded at Klout in 2012 — 573 GitHub forks, 33 external contributors, published to Maven Central, evangelized through a four-year blog and a talk hosted on the Apache Software Foundation's own wiki. Its KMV sketch-based cardinality estimator resolved OOM failures in the pipeline computing the Klout Score for high-follower "whale" accounts and became the org-wide reach-estimation solution; the same ideas (KMV sketches, XUnit-style multidimensional aggregation) were later reborn as Cubism, the Spark-based library built at Jumpshot and Demandbase.
+A Hive UDF library founded at Klout in 2012 that let engineers express complex data pipeline patterns declaratively in SQL instead of hand-writing MapReduce — e.g. a `collect` function that replaced expensive self-joins with a single group-by. Became core infrastructure powering the Klout Score in production; outgrew Klout with 573 GitHub forks, 33 external contributors, and publication to Maven Central. The same declarative-pipeline instinct was later reborn as Cubism, the Spark-based library built at Jumpshot and Demandbase.
 → [Project detail](projects/brickhouse.md)
 
 ### Satisfaction
