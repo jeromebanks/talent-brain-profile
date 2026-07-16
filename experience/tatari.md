@@ -12,6 +12,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-06-23"
     note: "structured interview"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — Celery executor tuning under Airflow; Coda Hale Metrics/Ganglia Spark instrumentation"
 ---
 
 # Tatari — Staff Data Platform Engineer
@@ -27,6 +30,9 @@ Helped transition this TV AdTech company off of Postgres and Redshift and onto S
 
 ### Data engineering best practices
 - scope: technical leadership as most senior IC; introducing scalable Big Data patterns during a period of management transition
+
+### Airflow/Celery executor tuning
+- scope: recurring diagnosis and tuning of Celery executor bottlenecks underlying Airflow ETL DAGs (Flexible Aggregator and related pipelines) to keep schedules on track
 
 ## Contributions
 
@@ -44,3 +50,8 @@ Helped transition this TV AdTech company off of Postgres and Redshift and onto S
 - what: Scala Spark UDF and UDAF library for data engineering use cases including KMV cardinality estimation and ArgMax TopN
 - stack: Scala, Apache Spark
 - impact: shipped and available for team adoption; tenure ended before broader uptake
+
+### Spark Metrics Instrumentation
+- what: custom Spark metrics plugins/handlers using Coda Hale Metrics to report pipeline-level job metrics; Ganglia provided separate cluster-level host monitoring
+- stack: Apache Spark, Coda Hale Metrics, Ganglia
+- impact: <!-- not yet captured -->

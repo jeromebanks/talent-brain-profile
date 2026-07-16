@@ -12,6 +12,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-06-24"
     note: "structured interview"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — Redis caching detail for Ramblas"
 ---
 
 # Tagged.com / if(we) — Senior Software Engineer, Analytics Infrastructure
@@ -34,8 +37,8 @@ Analytics infrastructure for a large social website. Small team of 3–4 data en
 ## Contributions
 
 ### Ramblas — Event Ingestion
-- what: event ingestion system from Kafka queues into HDFS with continuous scheduling and job monitoring via Satisfaction
-- stack: Kafka, Avro, Camus, Hive, HDFS, Satisfaction
+- what: event ingestion system from Kafka queues into HDFS with continuous scheduling and job monitoring via Satisfaction; used Redis as a caching layer for Ramblas schema definitions, among other uses
+- stack: Kafka, Avro, Camus, Hive, HDFS, Satisfaction, Redis
 - impact: ingested all application events from Tagged.com — a platform with 300M registered members and tens of millions of monthly active users — into HDFS at half-hour cadence; reliable, continuous production pipeline feeding downstream Pinkman aggregation
 
 ### Pinkman — Small Batch Event Aggregation

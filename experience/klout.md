@@ -14,6 +14,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-06-24"
     note: "structured interview"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — Coda Hale Metrics / Ganglia observability"
 ---
 
 # Klout — Senior Software Engineer
@@ -32,6 +35,9 @@ Technical leadership in Hadoop, Hive, and Big Data for a social influence scorin
 
 ### Hive and common UDF evangelism
 - scope: evangelized use of Hadoop Hive and common UDFs across the engineering org; introduced a common programming model for data development that replaced one-off MapReduce approaches
+
+### Metrics & observability
+- scope: instrumented production Hadoop/Hive pipelines with Coda Hale Metrics for application-level metrics; Ganglia provided cluster-level host health monitoring (Ops-managed, not application-level)
 
 ## Contributions
 

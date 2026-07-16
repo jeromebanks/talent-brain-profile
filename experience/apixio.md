@@ -12,6 +12,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-06-23"
     note: "structured interview"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — Celery executor tuning under Airflow; FastAPI internal APIs; Ganglia note"
 ---
 
 # Apixio — Staff Software Engineer, Data Platform
@@ -29,7 +32,10 @@ Data platform for healthcare document processing. Small team of 4–5 engineers 
 - scope: ongoing diagnosis and improvement of Spark pipeline performance, memory, and reliability
 
 ### Data engineering best practices
-- scope: evangelizing observability, Delta Lake patterns, and Spark best practices as most senior IC on the team
+- scope: evangelizing observability, Delta Lake patterns, and Spark best practices as most senior IC on the team (Ganglia handled cluster-level host monitoring separately from the Prometheus/Grafana application metrics built here)
+
+### Airflow/Celery executor tuning
+- scope: recurring diagnosis and tuning of Celery executor bottlenecks underlying Airflow-scheduled pipelines to keep DAGs on schedule
 
 ## Contributions
 
@@ -47,6 +53,11 @@ Data platform for healthcare document processing. Small team of 4–5 engineers 
 - what: Grafana/Prometheus observability for production Spark ETL pipelines, with ongoing monitoring and evangelism of observability practices
 - stack: Prometheus, Grafana, Apache Spark
 - impact: introduced observability where none existed before; enabled the team to predict pipeline completion times and surface failures faster
+
+### Internal APIs
+- what: internal APIs built with FastAPI supporting the document-processing data platform
+- stack: Python, FastAPI
+- impact: supported general day-to-day platform operations
 
 ### OCR Improvements
 - what: diagnosis of memory corruption in Spark OCR pipelines and optimization of executor and memory settings

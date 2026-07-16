@@ -14,6 +14,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-07-01"
     note: "structured interview — AI/ML work (MCP tools, LangGraph, Claude Code SDLC skills, org mindmap), team context, departure date"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — FastAPI used for domain-specific pipeline APIs"
 ---
 
 # Onyx GSK — Senior Data Platform Engineer
@@ -58,9 +61,9 @@ Data Platform Engineering (DPE) team building data and pipeline infrastructure f
 - impact: transformed GCP Workflow development from unconstrained YAML file commits to a governed engineering discipline with automated validation, per-workflow test coverage, error-condition simulation, and a full multi-environment release and change management process; team went from zero testing to integration tests + end-to-end harness across ~12+ workflows
 
 ### nf-forge
-- what: built and applied an early AI-assisted workflow-engineering approach for generating and refining Nextflow pipelines from existing scientific code; first application was migration of an HRD-determination workflow from cHPC-based execution to a running Nextflow pipeline in approximately 4–5 days; subsequent work explored structured scientific PRDs, schema-driven requirements, golden datasets, and nf-core-aware reuse as durable artifacts for reproducible AI-assisted pipeline delivery; longer-term vision was a repeatable system to accelerate creation, migration, and validation of many GSK Nextflow pipelines
+- what: built and applied an early AI-assisted workflow-engineering approach for generating and refining Nextflow pipelines from existing scientific code; first application was migration of an HRD-determination workflow from cHPC-based execution to a running Nextflow pipeline in approximately 4–5 days, which was reviewed and approved by oncologists and released to production for real clinical use; subsequent work explored structured scientific PRDs, schema-driven requirements, golden datasets, and nf-core-aware reuse as durable artifacts for reproducible AI-assisted pipeline delivery; longer-term vision was a repeatable "software factory" for generating and validating Nextflow pipelines across GSK's broader scientific workflow portfolio, still under active development
 - stack: Nextflow, Claude Code Skills, Codex, Gemini LLMs, cHPC
-- impact: migrated HRD-determination workflow from legacy cHPC code to a functioning Nextflow pipeline in approximately 4–5 days; created a concrete internal proof point for AI-assisted scientific workflow modernization; demonstrated a practical path from HPC-oriented execution toward cloud-based Nextflow delivery
+- impact: migrated HRD-determination workflow from legacy cHPC code to a functioning Nextflow pipeline in approximately 4–5 days; pipeline was reviewed and approved by oncologists and released to production, running against real clinical/patient data rather than a synthetic benchmark — ownership handed off to the team after release, so post-release usage cadence and volume weren't tracked by Jerome; created a concrete internal proof point for AI-assisted scientific workflow modernization that reached real clinical use, not just a demo; demonstrated a practical path from HPC-oriented execution toward cloud-based Nextflow delivery
 
 #### Problem
 
@@ -72,7 +75,7 @@ The immediate opportunity was to determine whether AI-assisted workflow generati
 
 Built and applied an early version of nf-forge, an AI-assisted workflow-engineering approach for generating and refining Nextflow pipelines from existing scientific code. Used Claude Code Skills, Codex, and Gemini LLMs as generation and investigation accelerators, paired with hands-on workflow design, implementation, debugging, and validation.
 
-The first meaningful application was the migration of an HRD-determination workload from cHPC-based execution to a running Nextflow pipeline in approximately 4–5 days.
+The first meaningful application was the migration of an HRD-determination workload from cHPC-based execution to a running Nextflow pipeline in approximately 4–5 days. The resulting pipeline went through review and approval by oncologists and was released to production, processing real clinical/patient data rather than a synthetic validation set. Jerome built and validated the pipeline; day-to-day operation and maintenance were handed off to the team after release, so exact post-release usage volume and cadence weren't tracked directly by him. The specific downstream clinical use of the HRD determination (e.g., treatment-eligibility decision vs. trial stratification) was never explicitly communicated back to him.
 
 Subsequent investigation explored structured scientific PRDs, schema-driven requirements, golden datasets, nf-core-aware reuse, staged testing, and reusable lessons learned — moving away from chat-session context toward durable, reviewable artifacts.
 
@@ -162,8 +165,8 @@ Extends distributed-systems background into scientific imaging workloads where c
 - impact: reduced reliance on ad hoc/hallucination-prone gcloud CLI scripting during pipeline debugging; adopted by Jerome and several DPE teammates; not yet presented to the wider AI Scientist org before departure
 
 ### MCP Strategy for Domain-Specific Nextflow Pipeline APIs
-- what: designed the MCP interface layer for GSK's Nextflow pipelines (run via Seqera Tower behind a governance-mandated WFMS REST gateway) as part of the AI Scientist / lab-in-the-loop (LIAL) direction; each pipeline exposed a hand-written, Pydantic-modeled domain-specific API for validation and ergonomics (with a Claude Code skill in progress to generate these from a template repo); iterated the MCP design from "generate one FastMCP tool per API/OpenAPI endpoint" (which caused context bloat and discoverability problems) to a single generic MCP tool backed by a searchable SKILL-file registry (keyword and hierarchical/type search, e.g. "image processing"), letting an AI Scientist agent discover and invoke the right domain-specific pipeline API without enumerating dozens of tools
-- stack: FastMCP, Python, Pydantic, OpenAPI, Nextflow, Seqera Tower, Claude Code Skills
+- what: designed the MCP interface layer for GSK's Nextflow pipelines (run via Seqera Tower behind a governance-mandated WFMS REST gateway) as part of the AI Scientist / lab-in-the-loop (LIAL) direction; each pipeline exposed a hand-written, FastAPI-based, Pydantic-modeled domain-specific API for validation and ergonomics (with a Claude Code skill in progress to generate these from a template repo); iterated the MCP design from "generate one FastMCP tool per API/OpenAPI endpoint" (which caused context bloat and discoverability problems) to a single generic MCP tool backed by a searchable SKILL-file registry (keyword and hierarchical/type search, e.g. "image processing"), letting an AI Scientist agent discover and invoke the right domain-specific pipeline API without enumerating dozens of tools
+- stack: FastAPI, FastMCP, Python, Pydantic, OpenAPI, Nextflow, Seqera Tower, Claude Code Skills
 - impact: working POC covering 3–4 pipelines (phenomics, Cellpose3D, one or two nf-core pipelines including rna-seq), with the intent to extend to nearly every nf-core pipeline plus internal ones; under evaluation with other LIAL/platform teams at time of departure
 
 ### LangGraph Agent Integration

@@ -14,6 +14,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-06-25"
     note: "structured interview"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — Coda Hale Metrics / InfluxDB observability"
 ---
 
 # Jumpshot/Avast — Senior Software Engineer
@@ -49,8 +52,8 @@ Big data infrastructure and pipelines for a marketing analytics startup with acc
 - impact: powered Jumpshot's E-commerce Insights SaaS product, used by brand marketers and e-commerce sites to track cross-site consumer journeys (browse Walmart → purchase on Amazon; abandon Adidas cart → purchase at Nike)
 
 ### Cubism Streaming
-- what: extension of Cubism to Spark Streaming for continuous multidimensional aggregation of browser-type metrics from the Avast clickstream at 5-30 minute intervals, with Kafka-based data quality monitoring for rapid anomaly detection
-- stack: Apache Spark Streaming, Kafka, Scala
+- what: extension of Cubism to Spark Streaming for continuous multidimensional aggregation of browser-type metrics from the Avast clickstream at 5-30 minute intervals, with Kafka-based data quality monitoring for rapid anomaly detection; Coda Hale Metrics instrumented the pipelines, with XUnit-level aggregates surfaced as time series in InfluxDB for monitoring dashboards
+- stack: Apache Spark Streaming, Kafka, Scala, Coda Hale Metrics, InfluxDB
 - impact: served as a sentinel against Avast browser plugin deployment misconfigurations — enabled the Data Processing team to detect data quality anomalies within minutes and halt downstream processing before corrupted data could propagate; without it, a silent misconfiguration in an Avast deployment could poison the entire pipeline
 
 ### Pigsicle

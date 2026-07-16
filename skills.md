@@ -102,6 +102,11 @@ Batch writes using HBase UDFs from Brickhouse; built demographic aggregation pip
 _Used at:_ [if(we)](experience/ifwe.md), [Klout](experience/klout.md)  
 _Reference:_ [hbase.apache.org](https://hbase.apache.org)
 
+**Coda Hale Metrics** — proficient — recent  
+Application-level metrics instrumentation library used across multiple roles for custom Spark/JVM pipeline metrics, from Klout through Tatari's custom Spark metrics plugins.  
+_Used at:_ [Klout](experience/klout.md), [Jumpshot](experience/jumpshot.md), [Tatari](experience/tatari.md)  
+_Reference:_ [metrics.dropwizard.io](https://metrics.dropwizard.io)
+
 **Apache Livy** — familiar — recent  
 Extended a fork of Apache Livy for bug fixes and new features to support Spark-on-Kubernetes deployment at Tatari.  
 _Used at:_ [Tatari](experience/tatari.md)  
@@ -216,6 +221,16 @@ Built Spark DataSource connector and Akka Reactive Streams connector at StitchFi
 _Used at:_ [StitchFix](experience/stitchfix.md)  
 _Reference:_ [AWS DynamoDB](https://aws.amazon.com/dynamodb/)
 
+**InfluxDB** — proficient — historical  
+Time-series store for surfacing Cubism's XUnit-level aggregates as monitoring dashboards, alongside Prometheus/Grafana.  
+_Used at:_ [Jumpshot](experience/jumpshot.md), [Demandbase](experience/demandbase.md)  
+_Reference:_ [influxdata.com](https://www.influxdata.com)
+
+**Redis** — proficient — historical  
+Used as a caching layer across multiple pipelines: schema-definition caching for Ramblas' Kafka-to-HDFS ingestion at Tagged/if(we), and caching in front of DynamoDB for ML model feature weights at StitchFix.  
+_Used at:_ [Tagged/if(we)](experience/ifwe.md), [StitchFix](experience/stitchfix.md)  
+_Reference:_ [redis.io](https://redis.io)
+
 **Cassandra / MongoDB** — familiar — historical  
 Used in supporting roles; not featured in specific project descriptions.
 
@@ -227,6 +242,11 @@ Used in supporting roles; not featured in specific project descriptions.
 Deployed ETL DAGs for TV metrics at Tatari; optimized and extended legacy BigQuery DAGs at Demandbase to meet SLAs.  
 _Used at:_ [Demandbase](experience/demandbase.md), [Tatari](experience/tatari.md)  
 _Reference:_ [airflow.apache.org](https://airflow.apache.org)
+
+**Celery** — proficient — recent  
+Recurring operational responsibility for tuning Celery executor bottlenecks underlying Airflow-scheduled ETL DAGs, across three consecutive roles — diagnosing worker/queue issues that stalled DAG schedules and kept pipelines running on time.  
+_Used at:_ [Demandbase](experience/demandbase.md), [Tatari](experience/tatari.md), [Apixio](experience/apixio.md)  
+_Reference:_ [docs.celeryq.dev](https://docs.celeryq.dev)
 
 **GCP Workflows** — proficient — active  
 Refactored JDBC ingestion workflow at Onyx GSK; built WFLinter pre-commit validation tool and SDLC model for Workflow development.  
@@ -270,6 +290,11 @@ _Reference:_ [langchain-ai.github.io/langgraph](https://langchain-ai.github.io/l
 **Claude Code Skills (agentic engineering)** — expert — active  
 Core building block of nf-forge's AI-assisted pipeline generation. Built internal skills for PR review/explanation with reviewer comprehension quizzes, JIRA ticket authoring/grooming, skill-documentation generation (with state-transition graphs of agentic workflows), and a Gemini adversarial-review loop (suggest → fix → re-review until approved or a turn limit is hit).  
 _Used at:_ [Onyx GSK](experience/onyx-gsk.md)
+
+**FastAPI** — proficient — active  
+Built internal APIs at Apixio; at Onyx GSK, used to implement hand-written, Pydantic-modeled domain-specific REST APIs for Nextflow pipelines, exposed through the MCP interface layer.  
+_Used at:_ [Apixio](experience/apixio.md), [Onyx GSK](experience/onyx-gsk.md)  
+_Reference:_ [fastapi.tiangolo.com](https://fastapi.tiangolo.com)
 
 **Gemini API / Gemini LLMs** — proficient — recent  
 Used as a generation and investigation accelerator in nf-forge alongside Claude Code and Codex; built a Gemini adversarial-review skill that critiques PRs and architecture plans and loops with Claude until approval.  
@@ -333,6 +358,11 @@ _Reference:_ [docker.com](https://www.docker.com)
 Infrastructure-as-code for cloud environments; used in DPE framework workflows at Onyx GSK.  
 _Used at:_ [Onyx GSK](experience/onyx-gsk.md)  
 _Reference:_ [terraform.io](https://www.terraform.io)
+
+**Ganglia** — familiar — historical  
+Cluster-level host health monitoring (Ops-managed) alongside application-level metrics work at five different companies.  
+_Used at:_ [Klout](experience/klout.md), [Jumpshot](experience/jumpshot.md), [Tatari](experience/tatari.md), [Demandbase](experience/demandbase.md), [Apixio](experience/apixio.md)  
+_Reference:_ [ganglia.info](http://ganglia.info)
 
 **Prometheus / Grafana** — proficient — recent  
 Built observability dashboards for production Spark pipelines at Apixio; integrated monitoring with alerts at Demandbase.  

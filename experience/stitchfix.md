@@ -12,6 +12,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-06-24"
     note: "structured interview"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — Redis caching detail for DynamoDB connector"
 ---
 
 # StitchFix — Data Platform Engineer, Algorithms and Analytics
@@ -49,8 +52,8 @@ Platform components for a fashion recommendation e-commerce retailer. Small plat
 - impact: Spark-scale evaluation layer for Brule's Rules cohort logic, enabling dynamic rule updates without redeployment; production status unclear at time of departure
 
 ### Spark DynamoDB Connector
-- what: Spark DataSource for scalable distributed read/write from DynamoDB
-- stack: Apache Spark, DynamoDB
+- what: Spark DataSource for scalable distributed read/write from DynamoDB, with Redis used as a caching layer in front of DynamoDB for model feature weights
+- stack: Apache Spark, DynamoDB, Redis
 - impact: enabled Spark jobs to read and write ML model weights stored in DynamoDB at distributed scale; used in production by the algorithms team
 
 ### Ginsberg — REST Service for Hive MetaStore

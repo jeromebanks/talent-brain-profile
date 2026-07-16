@@ -12,6 +12,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-06-24"
     note: "structured interview"
+  - file: "excavation"
+    date: "2026-07-16"
+    note: "structured interview — Celery executor tuning under Airflow; InfluxDB/Coda Hale observability"
 ---
 
 # Demandbase — Principal Big Data Engineer
@@ -26,13 +29,13 @@ Account-based marketing platform with a core IP-to-company mapping technology. J
 - scope: Big Data ETL pipelines serving critical business processes
 
 ### Compute efficiency and resource management
-- scope: ongoing BigQuery slot optimization, Spark tuning, and Airflow DAG reliability across team pipelines
+- scope: ongoing BigQuery slot optimization, Spark tuning, and Airflow DAG reliability across team pipelines, including recurring Celery executor tuning to prevent worker/queue bottlenecks from stalling Airflow DAG schedules
 
 ## Contributions
 
 ### EngagementQube
-- what: aggregate pipeline for multi-dimensional web engagement events, with reach estimation and time-series analytics
-- stack: Scala, Apache Spark
+- what: aggregate pipeline for multi-dimensional web engagement events, with reach estimation and time-series analytics; engagement aggregates surfaced as time series in InfluxDB alongside the existing Prometheus/Grafana monitoring
+- stack: Scala, Apache Spark, InfluxDB
 - impact: replaced a spaghetti implementation with a clean re-architecture applying the Cubism design pattern; added geo as a new dimension (roughly doubling the computation), substantially faster and cheaper than the original pipeline; aggregates surfaced to clients via a BigQuery-backed insights product for campaign performance tracking
 
 ### Nutch Crawler

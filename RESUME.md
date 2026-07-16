@@ -135,7 +135,7 @@ A Hive UDF library founded at Klout in 2012 that let engineers express complex d
 → [Project detail](projects/brickhouse.md)
 
 ### Satisfaction
-A next-generation dependency-based Hadoop batch scheduler built in Scala, with a DSL for workflow definitions, a Play! UI, and an Akka dependency engine. Open-sourced at if(we).
+An asset-based Hadoop batch scheduler built in Scala — rebuilding only unsatisfied dependencies on failure rather than re-running a whole DAG, a model Dagster would independently arrive at 3–5 years later. Predates Airflow's general availability; open-sourced at if(we).
 → [Project detail](projects/satisfaction.md)
 
 ## Education
