@@ -9,7 +9,7 @@
 
 ## Experience
 
-- [experience/onyx-gsk.md](experience/onyx-gsk.md): Onyx GSK — Senior Data Platform Engineer (2023-07–present)
+- [experience/onyx-gsk.md](experience/onyx-gsk.md): GSK — Senior Data Platform Engineer (2023-07–present)
 - [experience/apixio.md](experience/apixio.md): Apixio — Staff Software Engineer, Data Platform (2022-08–2023-07)
 - [experience/tatari.md](experience/tatari.md): Tatari — Staff Data Platform Engineer (2021-02–2022-07)
 - [experience/demandbase.md](experience/demandbase.md): Demandbase — Principal Big Data Engineer (2018-09–2021-02)

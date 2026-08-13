@@ -40,7 +40,7 @@ Big Data & Distributed Systems Architecture · Data Pipeline Engineering (Batch 
 
 ## Experience
 
-### Onyx GSK — Senior Data Platform Engineer (2023–2026)
+### GSK — Senior Data Platform Engineer (2023–2026)
 Data platform and pipeline engineering for GSK's scientific and bioinformatics workloads — GCP Dataflow ingestion of 150TB+ cell imaging data, and Nextflow/GCP Batch migrations for the phenomics and 3D cell-segmentation pipelines. Built nf-forge, an AI-assisted approach for generating Nextflow pipelines from existing scientific code (first proven by migrating an HRD-determination workflow in ~4–5 days), plus MCP tooling for GCP operations (adopted by the team for pipeline debugging) and a POC exposing Nextflow pipeline APIs to AI agents. Also built internal Claude Code skills for PR review, JIRA automation, and adversarial code review to raise engineering rigor across the team.
 → [Deep dive](experience/onyx-gsk.md)
 

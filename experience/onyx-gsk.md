@@ -1,5 +1,5 @@
 ---
-company: "Onyx GSK"
+company: "GSK"
 slug: "onyx-gsk"
 title: "Senior Data Platform Engineer"
 start: "2023-07"
@@ -19,9 +19,11 @@ ingested_sources:
     note: "structured interview — FastAPI used for domain-specific pipeline APIs"
 ---
 
-# Onyx GSK — Senior Data Platform Engineer
+# GSK — Senior Data Platform Engineer
 
 ## Context
+
+Employer was GSK (FTE, not a staffing arrangement); "Onyx" is the internal name of GSK's Data Platform Engineering org, not a separate company — retained in this file's slug for stable linking, but the employer of record is GSK.
 
 Data Platform Engineering (DPE) team building data and pipeline infrastructure for GSK's scientists, engineers, and decision makers — ingesting large scientific datasets, migrating bioinformatics and imaging workflows to Nextflow/GCP Batch, and supporting production genomics pipelines. Team of roughly 7–9: two senior platform engineers (Jerome plus one peer), 2–3 mid-level engineers, 2–3 junior engineers, occasional contractors, managed by Qi. Despite the "platform engineer" title, the role was closer to a generalist applying deep data-engineering and distributed-systems background to genomics, bioinformatics, and ML workloads — not classic Kubernetes/DevOps platform work. Jerome acquired working domain knowledge in genomics and bioinformatics on the job, and worked closely with ML engineers (on the phenomics pipeline) and with oncologists and research scientists (on HRD and Cellpose3D) to gather requirements and validate results. Later in the role, the team began engaging with GSK's broader AI Scientist / Lab-in-the-loop (LIAL) initiative — the MCP-based Nextflow pipeline API work and Jerome's personal LIAL org mindmap grew out of that direction. Left GSK June 2026.
 
@@ -41,9 +43,9 @@ Data Platform Engineering (DPE) team building data and pipeline infrastructure f
 - impact: enabled ingestion of large public scientific datasets into GSK's GCP environment under enterprise transfer constraints; provided the dataset foundation for pipeline validation and scale testing during nf-forge development
 
 ### Broad Institute JUMP-CP Cell Painting Ingestion
-- what: GCP Dataflow pipeline for ingesting 150TB+ of Cell Painting image data (100B+ files) from the Broad Institute's JUMP-CP dataset from S3 to GCP, with manifest capture of all transferred files
+- what: GCP Dataflow pipeline for ingesting 150TB+ of Cell Painting image data (millions of imaging objects/files) from the Broad Institute's JUMP-CP dataset from S3 to GCP, with manifest capture of all transferred files
 - stack: GCP Dataflow, Apache Beam, GCS, S3
-- impact: ingested the full JUMP-CP Cell Painting dataset (150TB+, 100B+ files) — the world's largest public Cell Painting dataset, covering 1B+ cells across 140,000+ chemical and genetic perturbations — into GSK's GCP environment, providing the imaging foundation for downstream phenomics analysis pipelines
+- impact: ingested the full JUMP-CP Cell Painting dataset (150TB+, millions of imaging objects/files) — the world's largest public Cell Painting dataset, covering 1B+ cells across 140,000+ chemical and genetic perturbations — into GSK's GCP environment, providing the imaging foundation for downstream phenomics analysis pipelines
 
 ### BigQuery Table Metadata
 - what: Dataflow pipeline gathering BigQuery table metadata (storage size, partitioning) for analysis and optimization of on-premise Hadoop to GCP migration
@@ -127,37 +129,37 @@ Established stable operating parameters empirically: batch size 512 / 8 workers 
 Demonstrates the practical engineering required to turn scientific image-analysis code into a cloud-executable workflow — not just translating logic into a new orchestration language, but redesigning data delivery, execution topology, and GPU utilization so the system actually performs at scale.
 
 ### Cellpose3D Distributed Segmentation Pipeline
-- what: designed and investigated a distributed 3D cell segmentation pipeline for multi-hundred-gigabyte microscopy volumes; used streamed TIFF-to-Zarr conversion, spatial block partitioning with halo overlap, GPU-based Cellpose-SAM inference, and controlled merge logic; identified and fixed a major merge-correctness bug from concurrent writes to shared Zarr chunks; pipeline slated to run against ~100 real patient tissue samples
-- stack: Nextflow, GCP Batch, Cellpose-SAM, Zarr, TIFF, GPU, Python, 3D segmentation, Docker
-- impact: established viable distributed architecture for Cellpose-SAM 3D segmentation on volumes too large for in-memory execution; demonstrated streamed ingestion of multi-hundred-GB TIFF volumes; corrected lost-update correctness issue in distributed Zarr merge stage; defined validation matrix for boundary-crossing cells, label collisions, and halo-only objects
+- what: designed and built a distributed 3D cell segmentation pipeline for multi-hundred-gigabyte microscopy volumes, from initial problem/dataset introduction (just before the 2025 Christmas holidays) to a production-ready pipeline by early March 2026 (~10 weeks); used streamed TIFF-to-Zarr conversion, spatial block partitioning with halo overlap, GPU-based Cellpose-SAM inference on L4 GPUs, and controlled merge logic; identified and fixed a major merge-correctness bug from concurrent writes to shared Zarr chunks; took an AI-first approach, using AI tooling directly in development, validation, and deployment; pipeline slated to run against ~100 real patient tissue samples
+- stack: Nextflow, GCP Batch, Cellpose-SAM, Zarr, TIFF, GPU (L4), Python, 3D segmentation, Docker
+- impact: went from problem introduction to a production-ready distributed architecture in about 10 weeks; built for high GPU utilization on L4s from the outset (not a legacy-pipeline port, unlike phenomics) via block-size tuning for throughput; demonstrated streamed ingestion of multi-hundred-GB TIFF volumes; corrected lost-update correctness issue in distributed Zarr merge stage; defined validation matrix for boundary-crossing cells, label collisions, and halo-only objects
 
 #### Problem
 
 Very large three-dimensional microscopy image files needed cell segmentation at a scale that could not be handled safely as a single in-memory job. Typical source images were hundreds of gigabytes and contained thousands of Z-slices. A single image volume could exceed available memory and create impractical runtime characteristics for a conventional Cellpose execution model.
 
-The objective was to investigate a distributed Nextflow-based approach for running Cellpose-SAM 3D segmentation over large image volumes while preserving segmentation quality at block boundaries and producing a correct merged output.
+The objective was to build a distributed Nextflow-based approach for running Cellpose-SAM 3D segmentation over large image volumes while preserving segmentation quality at block boundaries and producing a correct merged output.
 
 #### What I Built
 
-Designed and investigated a distributed 3D segmentation pipeline: streamed TIFF-to-Zarr conversion with chunk shape aligned to segmentation block dimensions, generation of a block manifest with spatial coordinates (Z/Y/X start and end) for each segmentation task, spatial partitioning into independent 3D blocks, halo overlap between blocks for boundary context, GPU-based Cellpose-SAM inference in 3D mode, and a controlled merge stage to reconcile block outputs into final segmentation labels.
+Was introduced to the problem and dataset just before the 2025 Christmas holidays and had a production-ready pipeline by early March 2026 — roughly 10 weeks. Built a distributed 3D segmentation pipeline: streamed TIFF-to-Zarr conversion with chunk shape aligned to segmentation block dimensions, generation of a block manifest with spatial coordinates (Z/Y/X start and end) for each segmentation task, spatial partitioning into independent 3D blocks, halo overlap between blocks for boundary context, GPU-based Cellpose-SAM inference in 3D mode on L4 GPUs, and a controlled merge stage to reconcile block outputs into final segmentation labels. Used AI tooling throughout — development, validation, and deployment — rather than as a bolt-on aid.
 
-Development ongoing as of mid-2026; pipeline is slated to run against approximately 100 real patient tissue samples.
+Pipeline is slated to run against approximately 100 real patient tissue samples.
 
 #### Technical Decisions
 
-Used streaming TIFF-to-Zarr conversion to avoid materializing multi-hundred-GB volumes in memory. Chunk shape was treated as a key design decision affecting storage efficiency, block reads, merge behavior, and concurrent-write safety.
+Used streaming TIFF-to-Zarr conversion to avoid materializing multi-hundred-GB volumes in memory. Chunk shape was treated as a key design decision affecting storage efficiency, block reads, merge behavior, and concurrent-write safety — block sizes were specifically tuned to balance memory footprint against GPU throughput on L4s.
+
+Unlike the phenomics pipeline (which ported and fixed an existing under-utilized implementation), Cellpose3D was designed for high GPU utilization from the start rather than optimized after the fact — there was no inefficient legacy pipeline to improve on.
 
 Included halo overlap between blocks so Cellpose-SAM could see neighboring context during inference, reducing truncated or missed objects at spatial boundaries. Merge stage required distinguishing core-region labels from overlap-region labels.
 
 Identified and corrected a major merge-stage correctness issue: multiple merge tasks writing to the same Zarr chunks concurrently caused lost updates even when tasks targeted logically different spatial regions. Fix: align chunk boundaries with block boundaries, eliminate uncontrolled concurrent writes, use a controlled sequential final-write stage. Correctness-first — distributed throughput was secondary.
 
-Identified that GPU acceleration applied to model inference while flow-following and final reconciliation remained CPU-bound, affecting the expected performance profile and future scaling design.
-
 Defined a deliberate validation matrix: cells crossing block and halo boundaries, thin structures spanning multiple blocks, multi-channel volumes, label collisions between neighboring blocks, halo-only objects, low-contrast regions, varying halo widths, and uneven object-density distributions.
 
 #### Through-Line
 
-Extends distributed-systems background into scientific imaging workloads where correctness depends on spatial data partitioning, storage layout, and safe reconciliation of parallel results. The central challenge was not running a segmentation model on a GPU — it was making a very large 3D scientific dataset decomposable, distributable, and mergeable without silently corrupting the final result.
+Extends distributed-systems background into scientific imaging workloads where correctness depends on spatial data partitioning, storage layout, and safe reconciliation of parallel results. The central challenge was not running a segmentation model on a GPU — it was making a very large 3D scientific dataset decomposable, distributable, and mergeable without silently corrupting the final result, and doing it in about 10 weeks from first exposure to the problem.
 
 ### MCP Tools for GCP
 - what: FastMCP-based MCP server (~12 tools) exposing GCP Batch, Cloud Run, GCP Workflows, and GCS operations for debugging Nextflow-pipeline job failures and reacting to production incidents, as an alternative to Claude Code writing ad hoc gcloud CLI invocations; included unit tests, an eval framework, and a feedback mechanism where agents could request tool improvements by filing markdown requests (e.g., "return field X so this becomes one call instead of two")
