@@ -41,8 +41,8 @@ _Used at:_ [GSK](experience/onyx-gsk.md)
 ## Languages
 
 **Scala** — expert — active  
-Primary language for production data engineering work since ~2011. Used for Spark jobs, streaming pipelines, Akka-based systems, DSL design, and open-source libraries.  
-_Used at:_ [Klout](experience/klout.md), [if(we)](experience/ifwe.md), [StitchFix](experience/stitchfix.md), [Demandbase](experience/demandbase.md), [Jumpshot](experience/jumpshot.md), [Tatari](experience/tatari.md)
+Primary language for production data engineering work in every role from 2011 through 2023. Used for Spark jobs, streaming pipelines, Akka-based systems, DSL design, and open-source libraries.  
+_Used at:_ [Klout](experience/klout.md), [if(we)](experience/ifwe.md), [StitchFix](experience/stitchfix.md), [Demandbase](experience/demandbase.md), [Jumpshot](experience/jumpshot.md), [Tatari](experience/tatari.md), [Apixio](experience/apixio.md)
 
 **Python** — proficient — active  
 Used for scripting, tooling, and data pipeline work. Built Spark Canary (zombie detection) and WFLinter (GCP Workflow validation) in Python.  
@@ -59,6 +59,10 @@ _Used at:_ [Quantcast](experience/quantcast.md)
 **C++** — familiar — historical  
 Used in earlier engineering roles.  
 _Used at:_ [Timber Hill](experience/timber-hill.md), [Lehman Brothers](experience/lehman.md), [OFI Corp.](experience/ofi.md), [Axiologic](experience/axiologic.md)
+
+**Rust** — proficient — active  
+Current primary language for personal systems projects: reimplementing Cubism (the multidimensional aggregation library originally built in Scala/Spark) on Apache DataFusion, and an independent PostScript interpreter project. Not yet applied in a professional/production context.  
+_Reference:_ personal projects, not yet captured as profile entries
 
 **Bash / Zsh** — proficient — active  
 Shell scripting for automation, tooling, and DevOps tasks throughout career.

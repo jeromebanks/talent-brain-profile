@@ -15,13 +15,19 @@ ingested_sources:
   - file: "excavation"
     date: "2026-07-16"
     note: "structured interview — Celery executor tuning under Airflow; FastAPI internal APIs; Ganglia note"
+  - file: "excavation"
+    date: "2026-08-21"
+    note: "structured interview — Kafka buffering of per-record Delta Lake updates"
+  - file: "excavation"
+    date: "2026-09-18"
+    note: "owner correction — Spark ETL work was written in Scala, not Python"
 ---
 
 # Apixio — Staff Software Engineer, Data Platform
 
 ## Context
 
-Data platform for healthcare document processing. Small team of 4–5 engineers responsible for maintaining and shepherding the main document ingestion and processing pipeline. Jerome joined as a Staff IC, the most senior individual contributor role on the team.
+Data platform for healthcare document processing. Small team of 4–5 engineers responsible for maintaining and shepherding the main document ingestion and processing pipeline. Jerome joined as a Staff IC, the most senior individual contributor role on the team. The platform's Spark ETL work was written in Scala; Python was used for tooling and internal APIs.
 
 ## Responsibilities
 
@@ -40,9 +46,9 @@ Data platform for healthcare document processing. Small team of 4–5 engineers 
 ## Contributions
 
 ### Trace Hardening
-- what: refactor of Spark ETL telemetry pipeline to resolve Delta Lake write contention via Kafka as an intermediate buffer, with mentorship on Delta Lake silver/gold patterns
-- stack: Apache Spark, Delta Lake, Kafka
-- impact: eliminated daily pipeline failures caused by Delta Lake write contention; pipeline ran stably for the remainder of the engagement after the Kafka buffer was introduced
+- what: refactor of Spark ETL telemetry pipeline that used Kafka as an intermediate buffer to coalesce per-record changes into batched Delta Lake updates, avoiding a separate Delta transaction and file update for every record; included mentorship on Delta Lake silver/gold patterns
+- stack: Scala, Apache Spark, Delta Lake, Kafka
+- impact: eliminated daily pipeline failures caused by Delta Lake write contention and write amplification; removed the scalability bottleneck that had prevented pipelines from completing, and the pipeline ran stably for the remainder of the engagement after the Kafka buffer was introduced
 
 ### Spark Canary
 - what: Python scripts to detect and diagnose Spark zombie processes via Spark Monitoring REST API
