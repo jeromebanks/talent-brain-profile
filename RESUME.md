@@ -48,11 +48,11 @@ Data platform and pipeline engineering for GSK's scientific and bioinformatics w
 Stabilized a healthcare document processing pipeline for a small data platform team. Resolved chronic daily pipeline failures by rearchitecting Delta Lake telemetry writes through Kafka; built a zombie-process detector that caught silently stalled Spark jobs before they missed time-critical deadlines; and introduced Prometheus/Grafana observability where none had existed.
 → [Deep dive](experience/apixio.md)
 
-### Tatari — Staff Data Platform Engineer (2020–2022)
+### Tatari — Staff Data Platform Engineer (2021–2022)
 Brought in to introduce Big Data to a TV AdTech company with no Spark experience and no budget for managed services. Stood up production Spark on Kubernetes as a zero-cost on-ramp; built multi-dimensional aggregation tooling for combined linear and streaming TV campaign metrics; and shipped a SparkSQL UDF library before the company eventually moved to Databricks.
 → [Deep dive](experience/tatari.md)
 
-### Demandbase — Principal Big Data Engineer (2018–2020)
+### Demandbase — Principal Big Data Engineer (2018–2021)
 Built and owned the core data pipelines behind Demandbase's intent signal product — web crawling at millions-of-URLs scale, multi-dimensional engagement aggregates re-architected with the Cubism pattern (adding geo, substantially faster and cheaper), and a streaming sync layer bridging cloud-scale processing with federated per-customer instances from an acquisition. Primary developer on most projects, from conception through production support.
 → [Deep dive](experience/demandbase.md)
 
