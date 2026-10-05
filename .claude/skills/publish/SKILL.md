@@ -41,9 +41,9 @@ If the user wants to fill gaps first, stop here and remind them to run this skil
 
 ## Step 3 — Generate resume
 
-Run the full procedure in `/generate` with no job description — do not reimplement resume generation here. This produces `resume.html` and `resume.pdf` at the profile root (ATS-safe HTML, auto-converted to PDF; see that skill for the format and conversion rules).
+Run the full procedure in `/generate` with no job description — do not reimplement resume generation here. This produces `resume.html`, `resume.pdf`, and an identical `<name-slug>-resume.pdf` (e.g. `jerome-banks-resume.pdf`) at the profile root (ATS-safe HTML, auto-converted to PDF; see that skill for the format and conversion rules).
 
-If this is the first time `resume.html`/`resume.pdf` are being written, add them to `llms.txt`'s Core Files section: `- [resume.pdf](resume.pdf): Rendered general-purpose resume (ATS-safe)`.
+If `llms.txt`'s Core Files section doesn't list them yet, add `- [resume.pdf](resume.pdf): Rendered general-purpose resume (ATS-safe)` and `- [<name-slug>-resume.pdf](<name-slug>-resume.pdf): Same resume, named for sending`.
 
 ## Step 4 — Rebuild README.md
 
@@ -149,7 +149,7 @@ If the user says "fix," make the specific corrections, then re-run this step onc
 Publishing's job is to push everything pending, not just the files this skill itself generated — `intent.md`, `skills.md`, `experience/`, `projects/`, and `extensions/` are edited by other skills (`intent`, `ingest`, `excavate`) between publish runs, and this is the step that actually makes those changes live. Check `git status` first and stage all tracked profile content, not just the generated artifacts:
 
 ```
-git add resume.html resume.pdf README.md SCHEMA.md llms.txt intent.md skills.md experience/ projects/ extensions/
+git add resume.html resume.pdf <name-slug>-resume.pdf README.md SCHEMA.md llms.txt intent.md skills.md experience/ projects/ extensions/
 git commit -m "Publish: update resume and README — [today's date]"
 git push
 ```
@@ -163,19 +163,20 @@ Print the result:
 
   resume.html  → updated general-purpose resume (ATS-safe source)
   resume.pdf   → updated general-purpose resume (PDF)
+  <name-slug>-resume.pdf → identical copy, named for sending
   README.md    → updated narrative
 
   Repo: [github url]
 
 To share:
-  Direct link: [github url]
+  Direct link: [github url]/blob/[branch]/<name-slug>-resume.pdf (or the repo url)
   Cowork: open this folder in Claude, start a Cowork session, share the link
 ```
 
 If git push fails (no remote, not initialized), print the manual steps and skip gracefully:
 ```
   No remote configured. To push manually:
-    git add resume.html resume.pdf README.md
+    git add resume.html resume.pdf <name-slug>-resume.pdf README.md
     git commit -m "Publish: update resume and README"
     gh repo create talent-brain-profile --public --source . --remote origin --push
 ```
@@ -184,7 +185,7 @@ If git push fails (no remote, not initialized), print the manual steps and skip 
 
 - Never modify `intent.md` — the owner fills that directly via `/intent`
 - Never modify experience or project detail files — those are maintained via ingest/excavate
-- `resume.html`/`resume.pdf` are always the current general-purpose resume; overwriting them is safe
+- `resume.html`/`resume.pdf`/`<name-slug>-resume.pdf` are always the current general-purpose resume; overwriting them is safe
 - README.md narrative is generated from the profile as it exists now — do not invent signals not present in the files
 - The "strongest signals" must be specific and evidenced — no generic claims
 - Never pull `intent.md`'s "Reasons for the Move," "Availability & Job Search Activity," or "Work Authorization" into `resume.html` or README.md — neither document is the place for them, regardless of source

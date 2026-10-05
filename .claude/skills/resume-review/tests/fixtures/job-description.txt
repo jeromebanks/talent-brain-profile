@@ -1,0 +1,1 @@
+Example Company seeks a staff data engineer with production Python, distributed systems experience, and ownership of reliable internal platforms. Kubernetes experience is preferred. The engineer should communicate tradeoffs to technical and operational partners.

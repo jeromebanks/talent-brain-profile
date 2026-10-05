@@ -1,0 +1,19 @@
+CASEY NG
+casey@example.test | https://example.test/casey
+
+SUMMARY
+Infrastructure engineer experienced in practical service reliability, data movement, and internal developer tooling.
+
+SKILLS
+Languages: Python and Go. Platforms: Linux, containers, and relational databases.
+
+EXPERIENCE
+Example Energy — Senior Infrastructure Engineer | 04/2020 – Present
+• Introduced restart-safe checkpoints after an interrupted import duplicated customer records in a pilot environment.
+• Built an operator runbook used by two support rotations to diagnose stuck work without database access.
+
+Example Media — Software Engineer | 08/2016 – 03/2020
+• Maintained event ingestion and separated retryable failures from malformed payloads during incident response.
+
+EDUCATION
+B.S. Software Engineering, Example College, 2016

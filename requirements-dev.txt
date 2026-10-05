@@ -1,0 +1,3 @@
+# The resume checker and tests use only the Python standard library.
+# PyYAML is required by Codex's skill-creator quick_validate.py.
+PyYAML==6.0.3

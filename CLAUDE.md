@@ -30,6 +30,7 @@ Always start with `RESUME.md`. Fetch detail files on demand — do not pre-load 
 | `/excavate` | Structured interview to deepen a specific role or project. Use when a file has `<!-- not yet captured -->` sections. |
 | `/intent` | Guided conversation to capture career goals and preferences, then writes `intent.md`. |
 | `/generate [jd]` | Generate a tailored resume for a job description, or a general-purpose resume. |
+| `/resume-review [resume] [jd]` | Review a resume for evidence integrity, parser safety, recruiter and hiring-manager signal, technical defensibility, and authentic career coherence. |
 | `/fit [jd]` | Structured fit analysis against a job description — what matches, what doesn't, what's missing. |
 | `/gap [jd]` | Identify gaps between the profile and a target role: hard gaps, profile gaps, framing gaps. |
 | `/cover-letter [jd]` | Draft a cover letter grounded in the actual profile. |
@@ -39,6 +40,7 @@ Always start with `RESUME.md`. Fetch detail files on demand — do not pre-load 
 - "Tell me about this candidate" → `/showcase`
 - "Add a new job" → `/ingest [file]` or `/excavate`
 - "Print a resume for this posting" → `/generate [jd]`
+- "Review this generated resume" → `/resume-review [resume] [jd]`
 - "How do I fit this role?" → `/fit [jd]`
 - "What am I missing for this role?" → `/gap [jd]`
 - "Write a cover letter" → `/cover-letter [jd]`

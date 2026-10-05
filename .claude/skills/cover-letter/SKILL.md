@@ -117,10 +117,10 @@ Iterate on the draft in conversation until the user approves it (this may take o
 
 ## After approval — write the file
 
-Once the user approves the content, save it as a plain-text file: `cover-letters/cover-letter-<company-or-role-slug>.txt` (create the `cover-letters/` directory if it doesn't exist). Use the same company/role slug convention as `/generate`'s tailored resume output under `resumes/`, so the two files pair up.
+Once the user approves the content, save it as a plain-text file: `cover-letters/<name-slug>-cover-letter-<company-or-role-slug>.txt` (create the `cover-letters/` directory if it doesn't exist). `<name-slug>` is `RESUME.md`'s frontmatter `name` lowercased and hyphenated (e.g. `jerome-banks`), so the file stays identifiable after it's sent. Use the same name and company/role slug conventions as `/generate`'s tailored resume output under `resumes/`, so the two files pair up.
 
 - This is a one-off application artifact, like a tailored resume — do not commit it to the profile repo, and do not write it into any file under `experience/`, `projects/`, or the profile root.
-- If a tailored resume was already generated for the same JD in this session, mention that the two files pair together (`resumes/resume-<slug>.pdf` and `cover-letters/cover-letter-<slug>.txt`).
+- If a tailored resume was already generated for the same JD in this session, mention that the two files pair together (`resumes/<name-slug>-resume-<slug>.pdf` and `cover-letters/<name-slug>-cover-letter-<slug>.txt`).
 - Confirm to the user where the file was written.
 
 ## Hard invariants

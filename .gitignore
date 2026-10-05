@@ -16,6 +16,9 @@ _dev/
 # Serena MCP — local index, not part of the repo
 .serena/
 
+# Local Python environment
+.venv/
+
 # Claude Code — local session settings (permissions, personal config)
 .claude/settings.local.json
 

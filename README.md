@@ -38,6 +38,7 @@ No setup required. The skills are bundled in this folder and load automatically.
 | Deepen a role with a structured interview | `/excavate` |
 | Update career goals and preferences | `/intent` |
 | Generate a resume for a job posting | `/generate [jd]` |
+| Review a generated resume through recruiter, manager, technical, and authenticity perspectives | `/resume-review [resume] [jd]` |
 | Check fit against a role | `/fit [jd]` |
 | Find gaps for a target role | `/gap [jd]` |
 | Draft a cover letter | `/cover-letter [jd]` |
