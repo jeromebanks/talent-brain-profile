@@ -15,6 +15,9 @@ ingested_sources:
   - file: "excavation"
     date: "2026-07-16"
     note: "structured interview — Redis caching detail for DynamoDB connector"
+  - file: "owner clarification"
+    date: "2026-11-23"
+    note: "Akka Streams backpressure handling in Otherworld, including its Kinesis connector"
 ---
 
 # StitchFix — Data Platform Engineer, Algorithms and Analytics
@@ -40,6 +43,7 @@ Platform components for a fashion recommendation e-commerce retailer. Small plat
 - what: framework for ingesting events from HTTP REST and AMQP endpoints into AWS S3 via Kinesis, with Akka Reactive Streams connectors for AWS services
 - stack: Scala, Akka, Akka Reactive Streams, AWS Kinesis, S3, DynamoDB, CloudWatch, AMQP
 - impact: production web analytics event ingestion pipeline for StitchFix.com — HTTP and AMQP events into AWS S3 via Kinesis using Akka Reactive Streams specifically to handle bursts of traffic and error conditions gracefully
+- backpressure: Otherworld (including its Kinesis connector) was built on Akka Streams and used backpressure to handle bursts and slower downstream stages (owner clarification, 2026-11-23)
 
 ### Brule's Rules — Rules Engine
 - what: lightweight reactive rules engine with inner Scala DSL and PEG parser external DSL, embeddable in Spark or Lambda functions
